@@ -1,0 +1,113 @@
+body {
+  margin: 0;
+  background: white;
+  color: white;
+  font-family: 'Michroma', sans-serif;
+}
+
+/* HEADER */
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 20px 40px;
+  background: rgb(90, 1, 29);
+  backdrop-filter: blur(10px);
+}
+
+.logo {
+  font-size: 18;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}
+
+/* MENU */
+.menu a,
+.menu span {
+  margin-left: 24px;
+  font-size: 15px;
+  letter-spacing: 0.15em;
+  text-decoration: none;
+  color: white;
+  opacity: 1;
+  cursor: pointer;
+}
+
+.menu a:hover,
+.menu span:hover {
+  opacity: 1;
+}
+
+/* DROPDOWN */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.submenu {
+  display: none;
+  position: absolute;
+  top: 20px;
+  left: 0;
+  background: #111;
+  padding: 10px;
+}
+
+.dropdown:hover .submenu {
+  display: block;
+}
+
+.submenu a {
+  display: block;
+  margin: 8px 0;
+}
+
+/* CONTENT */
+.content {
+  padding: 40px;
+}
+
+h1 {
+  color: rgb(90, 1, 29);
+  font-size: 18px;
+  letter-spacing: 0.2em;
+  margin-bottom: 40px;
+}
+
+/* GALERIE */
+.galerie {
+  column-count: 3;
+  column-gap: 24px;
+}
+
+.galerie a {
+  display: inline-block;
+  width: 100%;
+}
+
+.galerie img {
+  width: 100%;
+  margin-bottom: 24px;
+  border-radius: 18px;
+  display: block;
+  break-inside: avoid;
+
+  opacity: 0;
+  transform: translateY(20px) scale(0.98);
+  transition: opacity 0.6s ease, transform 0.6s ease, box-shadow 0.4s ease;
+}
+
+.galerie img.visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.galerie a:hover img {
+  transform: scale(1.05);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
