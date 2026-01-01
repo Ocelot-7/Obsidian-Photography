@@ -54,7 +54,7 @@ body {
   position: absolute;
   top: 20px;
   left: 0;
-  background: #111;
+  background: #0d6097;
   padding: 10px;
 }
 
@@ -123,7 +123,7 @@ h1 {
 
 
 .logo {
-  font-size: 14px;
+  font-size: 20px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: white;
