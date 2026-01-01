@@ -71,4 +71,12 @@ const photos = {
   
 
   ],
+
+    blackwhite: [
+    "v1767280805/IMGL1205_ekhgm3.jpg",
+
+
+  
+
+  ],
 };
