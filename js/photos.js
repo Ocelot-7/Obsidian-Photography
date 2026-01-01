@@ -34,6 +34,7 @@ const photos = {
     "633A2332_tieznu",
     "633A2670_lifeof",
     "633A2647_da8bf9",
+    "v1767280805/IMGL1205_ekhgm3.jpg",
 
    
   ],
