@@ -53,5 +53,21 @@ const photos = {
 
   
 
-  ]
+  ],
+
+  animals: [
+   "IMGL9574_yyfs0p",
+   "IMGL9573_jkhaxs",
+   "IMGL9617-6_iirn6r",
+   "IMGL9617-3_znzcpm",
+   "IMGL9611-7_icvtgj",
+   "IMGL1824-4_ff1nic",
+   "IMGL1877-2_q2sw5t",
+   "IMGL1874_ffzmwk",
+   "IMGL1877-2_q2sw5t",
+
+
+  
+
+  ],
 };

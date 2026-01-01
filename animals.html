@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Thomas Eucat</title>
+  <title>Animals</title>
 
   <link rel="stylesheet" href="css/style.css">
 
@@ -11,36 +10,37 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <header class="header">
-  
-
-   <a href="index.html" class="logo">Obsidian Photography 狐</a>
-
+    <a href="index.html" class="logo">Obsidian Photography 狐</a>
 
   <nav class="menu">
     <a href="index.html">Home</a>
 
     <div class="dropdown">
-      <span>Photos 写真</span>
+      <span>Photos</span>
       <div class="submenu">
         <a href="nippon.html">Nippon</a>
         <a href="city.html">City</a>
         <a href="animals.html">Animals</a> 
       </div>
     </div>
-
-    <a href="#about">About</a>
   </nav>
+  <a href="#about">About</a>
 </header>
 
-<h1>Selection</h1>
-<div class="galerie" id="galerie-random"></div>
+<main class="content">
+  <h1>Animals 動物</h1>
+  <div class="galerie" id="galerie-random"></div>
+</main>
 
 <script src="js/photos.js"></script>
 <script src="js/galerie.js"></script>
 <script>
-  generateHomeGalerie(25);
+  generateCategoryGalerie("animals", 10);
 </script>
+
 </body>
+</html>

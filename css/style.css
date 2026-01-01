@@ -33,7 +33,7 @@ body {
   font-size: 15px;
   letter-spacing: 0.15em;
   text-decoration: none;
-  color: white;
+  color: rgb(255, 253, 230);
   opacity: 1;
   cursor: pointer;
 }
@@ -110,4 +110,26 @@ h1 {
 .galerie a:hover img {
   transform: scale(1.05);
   box-shadow: 0 20px 40px rgba(0,0,0,0.35);
+}
+
+.galerie img {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.galerie a:hover img {
+  transform: scale(1.07);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+}
+
+
+.logo {
+  font-size: 14px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: white;
+  text-decoration: none;
+}
+
+.logo:hover {
+  opacity: 0.8;
 }
