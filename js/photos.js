@@ -280,7 +280,6 @@ vert: [
 jaune: [
   "IMGL7139_jdirjl",
   "633A8955_hiefub",
-  "633A8955_hiefub",
   "633A4997_xezelb",
   "633A0563_g9uvgm",
   "IMGL7143_wb18ym",
