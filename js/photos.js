@@ -51,6 +51,7 @@ const photos = {
     "633A9750-2_v9yu1p",
     "633A9737_htbmdo",
     "633A9774_lncvuz",
+    "IMGL7139-2_evavfp", //buddha//
 
    
   ],
@@ -66,6 +67,30 @@ const photos = {
    "633A4201-2_ccpn6k",
    "633A0719-2_myeinr",
    "633A1962_gghy9r",
+   "IMGL6869_loq8ks",
+   "IMGL2213-2_znhicb",
+   "IMGL0366_kiseoq",
+   "633A0787-2_bfnm8s",
+   "IMGL0022_ng44nl",
+   "IMGL6486_nm9ria",
+   "IMGL6479_gh4r3j",
+   "IMGL6508-2_ht6599",
+   "IMGL0222-2_q6lsou",
+   "IMGL2289-3_yqhrcf",
+   "IMGL0102_is13up",
+   "633A0668_zirvu8",
+   "IMGL0106_znfah4",
+   "IMGL6734_hcar2g",
+   "633A4107_uu4baf",
+   "IMGL0135_n59qbt",
+   "IMGL6503-5_idx04h",
+   "IMGL6479-2_d7wk4f",
+   "IMGL2282_wdmhql",
+   "IMGL0030_ffyepo",
+   "IMGL6479_gh4r3j",
+   "633A0545-3_tbwbtu",
+   "IMGL0023_jls22d",
+  
 
 
   
@@ -121,9 +146,187 @@ const photos = {
     "633A8154_ggv7bg",
     "IMGL6671_slrzx3",
     "IMGL6649_hhaf0m",
+    "IMGL9865-2_fplmno",
+    "IMGL6734-2_yjuhti",
 
 
   
 
   ],
+
+ rouge: [
+  "IMGL7133-2_mwzhwz",
+  "633A5342-2_oyh2vn",
+  "IMGL7076_bvbf8d",
+  "IMGL7079-2_wygdzy",
+  "IMGL9125_xi2v8p",
+  "IMGL6361-2_impjst",
+  "633A9737_htbmdo",
+  "IMGL9507-2_v7b1qi",
+  "IMGL9290_qkl7ms",
+  "633A6188_fc5h7j",
+  "633A5834_qxhjbb",
+  "IMGL6401_t0sgu3",
+  "IMGL7034-4_axplpr",
+  "633A5350_mnpc5c",
+  "IMGL6794_bygzlw",
+  "633A5935-2_r1itex",
+  "633A0381-2_ojc6ke",
+  "633A0337_lzgtym",
+  "633A5350_mnpc5c",
+  "IMGL8467_luqxmg",
+  "IMGL9823_cra6rl",
+  "IMGL9709_zlasps",
+  "IMGL6382-2_mm82yc",
+ 
+
+ ],
+
+ rose: [
+  "IMGL9865-2_fplmno",
+  "633A7585-3_rwbjox",
+
+ ],
+
+ bleu: [
+  
+ "IMGL8169-2_hnin0q",
+ "IMGL3226_eyhiiz",
+ "633A2647_da8bf9",
+ "633A2655_rjyv6d",
+ "IMGL2919_wva2bb",
+ "IMGL8067_e1tzwg",
+ "IMGL3061_qwqvlh",
+ "IMGL7265_ftcldl",
+ "IMGL6741_yi1yeo",
+ "633A7585_tj66gm",
+ "633A7552_e1mfnw",
+ "IMGL7602_gwyged",
+ "IMGL7584_inet1k",
+ "633A7552-2_g3ijdg",
+ "633A7602_ucktyp",
+ "633A7171_phsgma",
+ "633A7585-3_rwbjox",
+ "IMGL7265-2_zzx3qa",
+ "633A0588_endkhl",
+ "633A0588_endkhl",
+"IMGL7596_pnsigi",
+"633A2670_xtiqs1",
+"633A2633_nmlayg",
+"633A2679_kg2d7p",
+"633A2655_ri31ji",
+"633A2540_x5ybgf",
+"633A2581_tkrkwh",
+
+
+ ],
+
+ orange: [
+  
+ "633A5834_qxhjbb", 
+ "IMGL8016_abso7v",
+ "IMGL8169-2_hnin0q",
+ "IMGL3056_rj8gsi",
+ "IMGL8089_oefz9i",
+ "IMGL2981_cq2una",
+ "IMGL3061_qwqvlh",
+ "IMGL2981-2_efhcop",
+ "IMGL3226_eyhiiz",
+ "IMGL2919_wva2bb",
+ "IMGL3231_mradbm",
+ "IMGL8067_e1tzwg",
+ "IMGL2942-4_yp62kf",
+ "IMGL9413-2-3_xaon44",
+ "IMGL9413-2-3_xaon44",
+ "IMGL9801_davkrw",
+ "IMGL9801_davkrw",
+ "IMGL9734_ztvbwg",
+ "IMGL2813_p81pdx",
+ "IMGL9798_ubh1vs",
+ "IMGL0547-2_asqlld",
+ "IMGL8454_dcgz6s",
+ "IMGL9823_cra6rl",
+ "IMGL2765_gei45w",
+ 
+
+ ],
+  
+vert: [
+  
+ "633A4773_koghen",
+ "633A2801-2_ehmumd",
+ "633A8875-2_zzr88o",
+ "633A8066_slrnfe",
+ "633A5635_bxjnci",
+ "633A5543_ww7k8e",
+ "633A5540-2_wvro56",
+ "633A7197_urzwqh",
+ "633A5637_acebts",
+ "633A8117_kwymyf",
+ "633A7185_mgt0x5",
+ "633A2771_lthfsz",
+ "633A2791-2_rngryh",
+ "633A2812_g3fo2u",
+ "633A9371_brrzmw",
+ "633A5571_d2uocd",
+ "633A5572_iptyzp",
+ "633A2801-2_o6r6m9",
+ "633A8147_uxi4q7",
+ "633A8151_n0xybu",
+
+
+
+ ],
+jaune: [
+  "IMGL7139_jdirjl",
+  "633A8955_hiefub",
+  "633A8955_hiefub",
+  "633A4997_xezelb",
+  "633A0563_g9uvgm",
+  "IMGL7143_wb18ym",
+  "IMGL6924_ydjow4",
+  "IMGL7145_ra40lh",
+  "IMGL0600_brdbbl",
+  "IMGL7142_lchheg",
+  "633A8544_mwwa8n",
+  "IMGL6711_rifu1c",
+  "IMGL6924_ydjow4",
+  "IMGL0600_brdbbl",
+  "IMGL9865-2_fplmno",
+  "633A0381-2_ojc6ke",
+  
+ 
+
+
+
+ ],
+ bynight: [
+  
+"633A4201-2_ccpn6k",
+"IMGL6391_fyjyxc",
+"IMGL6233_ty24q5",
+"IMGL6382-2_mm82yc",
+"IMGL6302_r9rbyi",
+"633A5312_oikwmo",
+"IMGL6227-5_mgwxwc",
+"633A0505_qmrxzk",
+"IMGL0296_joeng5",
+"IMGL6302-2_owzop7",
+"633A0442_kvknxc",
+"IMGL6229_c7x8hc",
+"633A8435_rgwvrv",
+"633A4198_x7ldor",
+"IMGL0312_xqjqd3",
+"633A4181_glesvk",
+"633A0461-2_qxbyr4",
+
+ ],
+
+  buddha: [
+  
+
+
+ ],
+
+
 };

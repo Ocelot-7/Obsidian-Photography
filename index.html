@@ -10,38 +10,30 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+<head>
+  <meta charset="utf-8">
+  <title>Obsidian Photography</title>
+
+  <script>
+    const homes = [
+      //"index-rose.html", 
+      "index-rouge.html",
+      "index-bleu.html",
+      "index-orange.html",
+      "blackwhite.html",
+      "bynight.html",
+      "animals.html",
+      "nippon.html",
+      "index-vert.html",
+      "index-jaune.html",
+    ];
+
+    const randomHome = homes[Math.floor(Math.random() * homes.length)];
+
+    window.location.href = randomHome;
+  </script>
 </head>
 <body>
-
-<header class="header">
-  
-
-   <a href="index.html" class="logo">Obsidian Photography 狐</a>
-
-
-  <nav class="menu">
-    <a href="index.html">Home</a>
-
-    <div class="dropdown">
-      <span>Photos 写真</span>
-      <div class="submenu">
-        <a href="nippon.html">Nippon</a>
-        <a href="city.html">City</a>
-        <a href="animals.html">Animals</a> 
-        <a href="blackwhite.html">Black&White</a> 
-      </div>
-    </div>
-
-    <a href="#about">About</a>
-  </nav>
-</header>
-
-<h1>Selection</h1>
-<div class="galerie" id="galerie-random"></div>
-
-<script src="js/photos.js"></script>
-<script src="js/galerie.js"></script>
-<script>
-  generateHomeGalerie(25);
-</script>
 </body>
+</html>
+

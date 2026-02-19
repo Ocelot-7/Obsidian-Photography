@@ -1,63 +1,47 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>City</title>
+  <title>Thomas Eucat</title>
+
   <link rel="stylesheet" href="css/style.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-
 </head>
-
 <body>
 
 <header class="header">
   
+
    <a href="index.html" class="logo">Obsidian Photography 狐</a>
+
+
   <nav class="menu">
     <a href="index.html">Home</a>
 
-   <div class="dropdown">
+    <div class="dropdown">
       <span>Photos 写真</span>
       <div class="submenu">
         <a href="nippon.html">Nippon</a>
         <a href="city.html">City</a>
         <a href="animals.html">Animals</a> 
         <a href="blackwhite.html">Black&White</a> 
-        <a href="bynight.html">By Night</a> 
       </div>
     </div>
 
-     </div>
-      <div class="dropdown">
-      <span>Colors 色</span>
-      <div class="submenu">
-        <a href="index-orange.html">Orange 橙</a>
-        <a href="index-rouge.html">Red 赤</a>
-        <a href="index-bleu.html">Blue 青</a> 
-        <a href="index-rose.html">Pink ピンク</a> 
-        <a href="index-jaune.html">Yellow 黄色</a> 
-        <a href="index-vert.html">Green 緑</a> 
-        
-      </div>
-    </div>
     <a href="#about">About</a>
+  </nav>
 </header>
 
-<main class="content">
-  <div class="galerie" id="galerie"></div>
-</main>
-
-<h1>City 市</h1>
+<h1>Selection</h1>
 <div class="galerie" id="galerie-random"></div>
 
 <script src="js/photos.js"></script>
 <script src="js/galerie.js"></script>
 <script>
-  generateCategoryGalerie("city", 20);
+  generateHomeGalerie(25);
 </script>
-
 </body>
-</html>
