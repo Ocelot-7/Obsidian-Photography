@@ -66,10 +66,12 @@ body {
 }
 
 h1 {
-  color: rgb(90, 1, 29);
-  font-size: 18px;
+  color: rgb(0, 84, 31);
+  font-size: 20px;
   letter-spacing: 0.2em;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
 }
 
 /* GALERIE */

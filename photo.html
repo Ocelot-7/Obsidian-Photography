@@ -10,6 +10,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 
+  
+
+<button id="prev" class="nav prev">←</button>
+<button id="next" class="nav next">→</button>
+
+<img id="photo">
+
   <style>
     body {
       background: #0e0e0e;
@@ -47,19 +54,67 @@
 
 <img id="photo">
 
+
 <script src="js/photos.js"></script>
 
 <script>
-  const CLOUD_FULL = "https://res.cloudinary.com/dhbmaw1bm/image/upload";
+const params = new URLSearchParams(window.location.search);
+const img = params.get("img");
 
-  const params = new URLSearchParams(window.location.search);
-  const img = params.get("img");
+// Trouver la catégorie automatiquement
+let currentCategory = null;
+let currentIndex = -1;
 
-  if (img) {
-    const photo = document.getElementById("photo");
-    photo.src = `${CLOUD_FULL}/${img}`;
+for (const category in photos) {
+  const index = photos[category].indexOf(img);
+  if (index !== -1) {
+    currentCategory = category;
+    currentIndex = index;
+    break;
   }
+}
+
+// Afficher l'image actuelle
+if (img) {
+  document.getElementById("photo").src = `${CLOUD}/${img}`;
+}
+
+// Flèche suivante →
+document.getElementById("next").onclick = () => {
+  if (!currentCategory) return;
+
+  const list = photos[currentCategory];
+  const nextIndex = (currentIndex + 1) % list.length;
+  const nextImg = list[nextIndex];
+
+  window.location.href = `photo.html?img=${nextImg}`;
+};
+
+// Flèche précédente ←
+document.getElementById("prev").onclick = () => {
+  if (!currentCategory) return;
+
+  const list = photos[currentCategory];
+  const prevIndex = (currentIndex - 1 + list.length) % list.length;
+  const prevImg = list[prevIndex];
+
+  window.location.href = `photo.html?img=${prevImg}`;
+};
 </script>
+
+
+<script>
+const CLOUD_FULL = "https://res.cloudinary.com/dhbmaw1bm/image/upload";
+
+const params = new URLSearchParams(window.location.search);
+const img = params.get("img");
+
+if (img) {
+  const photo = document.getElementById("photo");
+  photo.src = `${CLOUD_FULL}/${img}`;
+}
+</script>
+
 
 
 </body>

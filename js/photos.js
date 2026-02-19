@@ -1,4 +1,6 @@
-const CLOUD = "https://res.cloudinary.com/dhbmaw1bm/image/upload/w_1200,q_auto,f_auto";
+// const CLOUD = "https://res.cloudinary.com/dhbmaw1bm/image/upload/w_1200,q_auto,f_auto";
+const CLOUD = "https://res.cloudinary.com/dhbmaw1bm/image/upload";
+
 
 
 const photos = {
@@ -312,7 +314,6 @@ jaune: [
   "IMGL6711_rifu1c",
   "IMGL6924_ydjow4",
   "IMGL0600_brdbbl",
-  "IMGL9865-2_fplmno",
   "633A0381-2_ojc6ke",
   
  
