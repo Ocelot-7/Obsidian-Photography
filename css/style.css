@@ -155,3 +155,53 @@ h1 {
 .dropdown:hover .submenu {
   display: flex;
 }
+
+
+.minimal-page {
+  margin: 0;
+   font-family: 'Michroma', sans-serif;
+  background: #ffffff;
+  color: #111;
+}
+
+.minimal-container {
+  max-width: 600px;
+  margin: 120px auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.minimal-container h1 {
+  font-size: 28px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.minimal-container p {
+  font-size: 16px;
+  line-height: 1.8;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.contact-email {
+  font-size: 18px;
+  font-weight: 500;
+  margin-top: 30px;
+}
+
+.contact-links {
+  margin-top: 30px;
+}
+
+.contact-links a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #111;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 2px;
+}
+
+.contact-links a:hover {
+  opacity: 0.6;
+}
