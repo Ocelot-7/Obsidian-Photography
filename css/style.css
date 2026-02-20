@@ -312,3 +312,17 @@ h1 {
 .retour:hover {
   opacity: 1;
 }
+
+
+.about-section {
+  margin-top: 30px; /* espace doux après Instagram */
+}
+
+.about-photo {
+  width: 320px;
+  height: auto;
+  border-radius: 20px;
+  display: block;
+  margin: 20px auto 0 auto; /* centre + réduit l'espace */
+  box-shadow: 0 15px 40px rgba(0,0,0,0.15);
+}
