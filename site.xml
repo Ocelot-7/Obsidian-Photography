@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+  <!-- Pages principales -->
+  <url>
+    <loc>https://ocelot-7.github.io/Obsidian-Photography/index.html</loc>
+  </url>
+  <url>
+    <loc>https://ocelot-7.github.io/Obsidian-Photography/about.html</loc>
+  </url>
+  <url>
+    <loc>https://ocelot-7.github.io/Obsidian-Photography/contact.html</loc>
+  </url>
+
+  <!-- Catégories -->
+  <url>
+    <loc>https://ocelot-7.github.io/Obsidian-Photography/nippon.html</loc>
+  </url>
+  <url>
+    <loc>https://ocelot-7.github.io/Obsidian-Photography/city.html</loc>
+  </url>
+  <url>
+    <loc>https://ocelot-7.github.io/Obsidian-Photography/animals.html</loc>
+  </url>
+  <url>
+    <loc>https://ocelot-7.github.io/Obsidian-Photography/blackwhite.html</loc>
+  </url>
+  <url>
+    <loc>https://ocelot-7.github.io/Obsidian-Photography/bynight.html</loc>
+  </url>
+
+  <!-- Couleurs -->
+  <url>
+    <loc>https://ocelot-7.github.io/Obsidian-Photography/index-orange.html</loc>
+  </url>
+  <url>
+    <loc>https://ocelot-7.github.io/Obsidian-Photography/index-rouge.html</loc>
+  </url>
+  <url>
+    <loc>https://ocelot-7.github.io/Obsidian-Photography/index-bleu.html</loc>
+  </url>
+  <url>
+    <loc>https://ocelot-7.github.io/Obsidian-Photography/index-rose.html</loc>
+  </url>
+  <url>
+    <loc>https://ocelot-7.github.io/Obsidian-Photography/index-jaune.html</loc>
+  </url>
+  <url>
+    <loc>https://ocelot-7.github.io/Obsidian-Photography/index-vert.html</loc>
+  </url>
+
+</urlset>

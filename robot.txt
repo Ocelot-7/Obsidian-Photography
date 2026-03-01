@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ocelot-7.github.io/Obsidian-Photography/sitemap.xml
