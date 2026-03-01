@@ -8,6 +8,19 @@ function shuffleArray(array) {
   return arr;
 }
 
+function formatCategoryName(category) {
+  const map = {
+    street: "Street Photography",
+    night: "Night Photography",
+    blackwhite: "Black & White Photography",
+    city: "City Photography",
+    animals: "Wildlife Photography",
+    japan: "Japan Photography"
+  };
+
+  return map[category] || `${category} Photography`;
+}
+
 // Création d'une image (évite de répéter le code)
 function createImageElement(filename, category, index) {
   const link = document.createElement("a");
@@ -15,7 +28,12 @@ function createImageElement(filename, category, index) {
 
   const img = document.createElement("img");
   img.src = `${CLOUD}/${filename}`;
-  img.alt = `Photography ${category} in Japan – Obsidian Photography`;
+  const location = "Japan";
+const categoryName = formatCategoryName(category);
+
+img.alt = category === "japan"
+  ? `${categoryName} – Obsidian Photography`
+  : `${categoryName} in ${location} – Obsidian Photography`;
   img.loading = "lazy";
   img.decoding = "async";
   img.classList.add("gallery-image");
@@ -35,6 +53,8 @@ function generateHomeGalerie(count = 25) {
   const container = document.getElementById("galerie-random");
   if (!container || !photos) return;
 
+  
+
   container.innerHTML = "";
 
   // Fusionne toutes les photos de toutes les catégories
@@ -49,9 +69,9 @@ function generateHomeGalerie(count = 25) {
   // Sélection limitée
   const selection = shuffled.slice(0, Math.min(count, shuffled.length));
 
-  selection.forEach((filename, i) => {
-    const element = createImageElement(filename, i);
-    container.appendChild(element);
+ selection.forEach((filename, i) => {
+  const element = createImageElement(filename, "japan", i);
+  container.appendChild(element);
   });
 }
 
@@ -72,8 +92,8 @@ function generateCategoryGalerie(category, count = 14) {
   // Sélection
   const selection = shuffled.slice(0, Math.min(count, shuffled.length));
 
-  selection.forEach((filename, i) => {
-    const element = createImageElement(filename, i);
-    container.appendChild(element);
+ selection.forEach((filename, i) => {
+  const element = createImageElement(filename, category, i);
+  container.appendChild(element);
   });
 }
