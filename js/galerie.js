@@ -9,17 +9,19 @@ function shuffleArray(array) {
 }
 
 // Création d'une image (évite de répéter le code)
-function createImageElement(filename, index) {
+function createImageElement(filename, category, index) {
   const link = document.createElement("a");
   link.href = `photo.html?img=${filename}`;
 
   const img = document.createElement("img");
   img.src = `${CLOUD}/${filename}`;
-  img.alt = filename;
+  img.alt = `Photography ${category} in Japan – Obsidian Photography`;
+  img.loading = "lazy";
+  img.decoding = "async";
+  img.classList.add("gallery-image");
 
   link.appendChild(img);
 
-  // Animation d'apparition
   setTimeout(() => {
     img.classList.add("visible");
   }, index * 60);
