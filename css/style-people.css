@@ -28,35 +28,6 @@ body {
 }
 
 /* MENU */
-
-.menu {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
-.dropdown {
-  position: relative;
-}
-
-.submenu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  flex-direction: column;
-}
-
-.dropdown:hover .submenu {
-  display: flex;
-}
-
-.menu {
-  display: flex;
-  align-items: center;
-  margin-left: auto;
-}
-
 .menu a,
 .menu span {
   margin-left: 24px;
@@ -82,7 +53,7 @@ body {
 
 
 .dropdown:hover .submenu {
-  display: flex;
+  display: block;
 }
 
 .submenu a {
