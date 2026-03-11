@@ -1,6 +1,6 @@
-// Mélange propre (Fisher-Yates, meilleur que sort random)
+// Mélange propre (Fisher-Yates)
 function shuffleArray(array) {
-  const arr = [...array]; // copie pour ne pas modifier l'original
+  const arr = [...array];
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [arr[i], arr[j]] = [arr[j], arr[i]];
@@ -21,19 +21,22 @@ function formatCategoryName(category) {
   return map[category] || `${category} Photography`;
 }
 
-// Création d'une image (évite de répéter le code)
+// Création image
 function createImageElement(filename, category, index) {
+
   const link = document.createElement("a");
   link.href = `photo.html?img=${filename}`;
 
   const img = document.createElement("img");
   img.src = `${CLOUD}/${filename}`;
-  const location = "Japan";
-const categoryName = formatCategoryName(category);
 
-img.alt = category === "japan"
-  ? `${categoryName} – Obsidian Photography`
-  : `${categoryName} in ${location} – Obsidian Photography`;
+  const location = "Japan";
+  const categoryName = formatCategoryName(category);
+
+  img.alt = category === "japan"
+    ? `${categoryName} – Obsidian Photography`
+    : `${categoryName} in ${location} – Obsidian Photography`;
+
   img.loading = "lazy";
   img.decoding = "async";
   img.classList.add("gallery-image");
@@ -47,53 +50,43 @@ img.alt = category === "japan"
   return link;
 }
 
-
-// HOME — mélange toutes les photos (SANS doublons)
+// HOME
 function generateHomeGalerie(count = 25) {
+
   const container = document.getElementById("galerie-random");
   if (!container || !photos) return;
 
-  
-
   container.innerHTML = "";
 
-  // Fusionne toutes les photos de toutes les catégories
   const allPhotos = Object.values(photos).flat();
-
-  // Supprime les doublons éventuels
   const uniquePhotos = [...new Set(allPhotos)];
-
-  // Mélange
   const shuffled = shuffleArray(uniquePhotos);
 
-  // Sélection limitée
   const selection = shuffled.slice(0, Math.min(count, shuffled.length));
 
- selection.forEach((filename, i) => {
-  const element = createImageElement(filename, "japan", i);
-  container.appendChild(element);
+  selection.forEach((filename, i) => {
+    const element = createImageElement(filename, "japan", i);
+    container.appendChild(element);
   });
+
 }
 
-
-// CATÉGORIE — une seule catégorie (SANS doublons)
+// CATEGORY
 function generateCategoryGalerie(category, count = 14) {
+
   const container = document.getElementById("galerie-random");
   if (!container || !photos[category]) return;
 
   container.innerHTML = "";
 
-  // Copie + suppression des doublons
   const uniquePhotos = [...new Set(photos[category])];
-
-  // Mélange propre
   const shuffled = shuffleArray(uniquePhotos);
 
-  // Sélection
   const selection = shuffled.slice(0, Math.min(count, shuffled.length));
 
- selection.forEach((filename, i) => {
-  const element = createImageElement(filename, category, i);
-  container.appendChild(element);
+  selection.forEach((filename, i) => {
+    const element = createImageElement(filename, category, i);
+    container.appendChild(element);
   });
+
 }

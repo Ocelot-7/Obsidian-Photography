@@ -1,75 +1,49 @@
-
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="utf-8">
-  <title>Thomas Eucat</title>
-<title>Red 赤 — Obsidian Photography</title>
-  <meta name="description" content="Red-themed photography capturing intensity, emotion and striking urban contrasts.">
-<meta property="og:title" content="Red 赤 — Obsidian Photography">
-<meta property="og:description" content="Photography exploring red tones, emotion and dramatic light.">
-
 <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="index, follow">
 
-  <link rel="stylesheet" href="css/style-rouge.css">
+<title>Red 赤 — Obsidian Photography</title>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+<meta name="description" content="Blue-toned photography exploring calm atmospheres, night light and reflective urban moments.">
+<meta property="og:title" content="Blue 青 — Obsidian Photography">
+<meta property="og:description" content="Blue photography capturing night light and quiet atmospheres">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="index, follow">
+
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/colors.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+
 </head>
-<body>
+
+
+<body class="theme-red">
 
 <header class="header">
-  
-
-   <a href="index.html" class="logo">Obsidian Photography - 狐</a>
-
-
-  <nav class="menu">
-    <a href="index.html">Home</a>
-
-    <div class="dropdown">
-      <span>Photos 写真</span>
-      <div class="submenu">
-        <a href="nippon.html">Nippon 日本</a>
-        <a href="city.html">City 巾</a>
-        <a href="animals.html">Animals 動物</a>
-        <a href="blackwhite.html">Black&White 白黒写真</a>  
-        <a href="bynight.html">By Night 夜</a> 
-        <a href="people.html">People 人々</a>
-      </div>
-
-    </div>
-      <div class="dropdown">
-      <span>Colors 色</span>
-      <div class="submenu">
-        <a href="index-orange.html">Orange 橙</a>
-        <a href="index-rouge.html">Red 赤</a>
-        <a href="index-bleu.html">Blue 青</a> 
-        <a href="index-rose.html">Pink ピンク</a> 
-        <a href="index-jaune.html">Yellow 黄色</a> 
-        <a href="index-vert.html">Green 緑</a> 
-        
-      </div>
-    </div>
-
-    <a href="artwork.html">Artwork - 図</a>
-
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
-  </nav>
-
-
+<div id="menu"></div>
 </header>
 
 <h1>Red - 赤</h1>
+
 <div class="galerie" id="galerie-random"></div>
 
+<div id="footer"></div>
+
+
+<script src="js/menu.js"></script>
 <script src="js/photos.js"></script>
 <script src="js/galerie.js"></script>
+<script src="js/footer.js"></script>
+
 <script>
-  generateCategoryGalerie("rouge", 14);
+generateCategoryGalerie("rouge", 14);
 </script>
+
 </body>
+</html>

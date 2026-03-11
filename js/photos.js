@@ -1,4 +1,4 @@
-const CLOUD = "https://res.cloudinary.com/dhbmaw1bm/image/upload/w_1200,q_auto,f_auto";
+const CLOUD = "https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto";
 // const CLOUD = "https://res.cloudinary.com/dhbmaw1bm/image/upload";
 
 
@@ -343,6 +343,8 @@ jaune: [
  ],
 
   buddha: [
+
+    "IMGL7139-2_evavfp",
   
 
 
@@ -380,6 +382,10 @@ jaune: [
  "IMGL1262-2_vperob",
 
  ],
+ people: [
+  
+ "IMGL1262-2_vperob",
 
+ ],
 
 };

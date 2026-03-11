@@ -1,125 +1,152 @@
+
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
-  <meta charset="utf-8">
-  <title>Photo</title>
+<meta charset="utf-8">
+<title>Photo</title>
 
-  <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/style.css">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 
-  
+<style>
+
+body{
+  background:#0e0e0e;
+  margin:0;
+}
+
+/* IMAGE */
+
+#photo{
+  display:block;
+
+  max-width:90vw;
+  max-height:85vh;
+
+  width:auto;
+  height:auto;
+
+  margin:60px auto;
+  border-radius:20px;
+  box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* BACK */
+
+.back{
+  color:white;
+  text-decoration:none;
+  font-size:12px;
+  letter-spacing:0.15em;
+
+  position:fixed;
+  top:24px;
+  left:24px;
+
+  opacity:0.7;
+}
+
+.back:hover{
+  opacity:1;
+}
+
+/* NAVIGATION */
+
+.nav{
+  position:fixed;
+  top:50%;
+  transform:translateY(-50%);
+
+  background:none;
+  border:none;
+
+  color:white;
+  font-size:34px;
+
+  cursor:pointer;
+  opacity:0.6;
+}
+
+.nav:hover{
+  opacity:1;
+}
+
+.prev{
+  left:30px;
+}
+
+.next{
+  right:30px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<a class="back" href="javascript:history.back()">← RETOUR</a>
 
 <button id="prev" class="nav prev">←</button>
 <button id="next" class="nav next">→</button>
 
 <img id="photo">
 
-  <style>
-    body {
-      background: #0e0e0e;
-      margin: 0;
-    }
-
-    img {
-      display: block;
-      width: 80%;
-      margin: 60px auto;
-      border-radius: 20px;
-      box-shadow: 0 20px 40px rgba(0,0,0,0.4);
-    }
-
-    a {
-      color: rgb(255, 255, 255);
-      text-decoration: none;
-      font-size: 12px;
-      letter-spacing: 0.15em;
-      position: fixed;
-      top: 24px;
-      left: 24px;
-      opacity: 0.7;
-    }
-
-    a:hover {
-      opacity: 1;
-    }
-  </style>
-</head>
-
-<body>
-
-<a href="index.html">← RETOUR</a>
-
-<img id="photo">
-
-
 <script src="js/photos.js"></script>
 
 <script>
+
 const params = new URLSearchParams(window.location.search);
 const img = params.get("img");
 
-// Trouver la catégorie automatiquement
+// catégorie + index
 let currentCategory = null;
 let currentIndex = -1;
 
-for (const category in photos) {
+for(const category in photos){
   const index = photos[category].indexOf(img);
-  if (index !== -1) {
+
+  if(index !== -1){
     currentCategory = category;
     currentIndex = index;
     break;
   }
 }
 
-// Afficher l'image actuelle
-if (img) {
+// afficher image
+if(img){
   document.getElementById("photo").src = `${CLOUD}/${img}`;
 }
 
-// Flèche suivante →
+// photo suivante
 document.getElementById("next").onclick = () => {
-  if (!currentCategory) return;
+
+  if(!currentCategory) return;
 
   const list = photos[currentCategory];
   const nextIndex = (currentIndex + 1) % list.length;
-  const nextImg = list[nextIndex];
 
-  window.location.href = `photo.html?img=${nextImg}`;
+  window.location.href = `photo.html?img=${list[nextIndex]}`;
+
 };
 
-// Flèche précédente ←
+// photo précédente
 document.getElementById("prev").onclick = () => {
-  if (!currentCategory) return;
+
+  if(!currentCategory) return;
 
   const list = photos[currentCategory];
   const prevIndex = (currentIndex - 1 + list.length) % list.length;
-  const prevImg = list[prevIndex];
 
-  window.location.href = `photo.html?img=${prevImg}`;
+  window.location.href = `photo.html?img=${list[prevIndex]}`;
+
 };
+
 </script>
-
-
-<script>
-const CLOUD_FULL = "https://res.cloudinary.com/dhbmaw1bm/image/upload";
-
-const params = new URLSearchParams(window.location.search);
-const img = params.get("img");
-
-if (img) {
-  const photo = document.getElementById("photo");
-  photo.src = `${CLOUD_FULL}/${img}`;
-}
-</script>
-
-
 
 </body>
 </html>
-
-<a href="javascript:history.back()">← RETOUR</a>
-
-

@@ -12,64 +12,38 @@
   <meta name="robots" content="index, follow">
 
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/colors.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 </head>
 
-<body>
-
+<body class="theme-blue">
 <header class="header">
-  
-   <a href="index.html" class="logo">Obsidian Photography - 狐</a>
-  <nav class="menu">
-    <a href="index.html">Home</a>
+  <div id="menu">
 
-   <div class="dropdown">
-      <span>Photos 写真</span>
-      <div class="submenu">
-        <a href="nippon.html">Nippon 日本</a>
-        <a href="city.html">City 巾</a>
-        <a href="animals.html">Animals 動物</a>
-        <a href="blackwhite.html">Black&White 白黒写真</a>  
-        <a href="bynight.html">By Night 夜</a>
-        <a href="people.html">People 人々</a>
-      </div>
-    </div>
 
-     </div>
-      <div class="dropdown">
-      <span>Colors 色</span>
-      <div class="submenu">
-        <a href="index-orange.html">Orange 橙</a>
-        <a href="index-rouge.html">Red 赤</a>
-        <a href="index-bleu.html">Blue 青</a> 
-        <a href="index-rose.html">Pink ピンク</a> 
-        <a href="index-jaune.html">Yellow 黄色</a> 
-        <a href="index-vert.html">Green 緑</a> 
-        
-      </div>
-    </div>
-
-    <a href="artwork.html">Artwork - 図</a>
-    
-    <a href="about.html">About</a>
-    <a href="contact.html">Contact</a>
+  </div>
 </header>
 
-<!-- <main class="content">
-  
-  <div class="galerie" id="galerie-random"></div>
-</main> -->
-<h1>Animals - 動物</h1>
+<h1>Animals - 動物<h1>
+<script src="js/menu.js"></script>
 <div class="galerie" id="galerie-random"></div>
-
+<script src="js/footer.js"></script>
 <script src="js/photos.js"></script>
 <script src="js/galerie.js"></script>
+
 <script>
-  generateCategoryGalerie("animals", 10);
+  generateCategoryGalerie("animals", 14);
 </script>
 
+
+<div id="footer"></div>
+
 </body>
-</html>
+
+
+<body>
+
+

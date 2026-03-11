@@ -1,0 +1,130 @@
+/* BLUE THEME */
+
+.theme-blue .header {
+  background: rgb(8,1,90);
+}
+
+.theme-blue h1 {
+  color: rgb(8,1,90);
+}
+
+.theme-blue .submenu{
+  background: rgb(8,1,90);
+}
+
+.theme-blue .footer {
+  background: rgb(8,1,90);
+}
+
+
+/* RED THEME */
+
+.theme-red .header {
+  background: rgb(120,10,10);
+}
+
+.theme-red h1 {
+  color: rgb(120,10,10);
+}
+
+.theme-red .submenu{
+  background: rgb(120,10,10);
+}
+
+.theme-red .footer {
+  background:rgb(120,10,10);
+}
+
+/* Pink THEME */
+
+.theme-pink .header {
+  background: rgb(255, 165, 165);
+}
+
+.theme-pink h1 {
+  color: rgb(255, 165, 165);
+}
+
+.theme-pink .submenu{
+  background:rgb(255, 165, 165);
+}
+
+.theme-pink .footer {
+  background:rgb(255, 165, 165);
+}
+
+
+
+
+
+/* GREEN THEME */
+
+.theme-green .header {
+  background: rgb(0,90,50);
+}
+
+.theme-green h1 {
+  color: rgb(0,90,50);
+}
+
+.theme-green .submenu{
+  background: rgb(0,90,50);
+}
+
+.theme-green .footer{
+  background: rgb(0,90,50);
+}
+
+/* YELLOW THEME */
+
+.theme-yellow .header {
+  background: rgb(255, 210, 47);
+}
+
+.theme-yellow h1 {
+  color: rgb(255, 210, 47);
+}
+
+.theme-yellow .submenu{
+  background:rgb(255, 210, 47);
+}
+
+.theme-yellow .footer {
+  color: rgb(255, 210, 47);
+}
+
+/* Orange THEME */
+
+.theme-orange .header {
+  background: rgb(255, 166, 88);
+}
+
+.theme-orange h1 {
+  color: rgb(255, 166, 88);
+}
+
+.theme-orange .submenu{
+  background:rgb(255, 166, 88)
+}
+
+.theme-orange .footer {
+  background:rgb(255, 166, 88);
+}
+
+/* artwork THEME */
+
+.theme-artwork .header {
+  background: #787166;
+}
+
+.theme-artwork h1 {
+  color: #787166;
+}
+
+.theme-artwork .submenu{
+  background:#787166;
+}
+
+.theme-artwork .footer {
+  background:#787166;
+}

@@ -1,4 +1,7 @@
+const menuHTML = `
 <a href="index.html" class="logo">Obsidian Photography - 狐</a>
+
+<div class="header-line"></div>
 
 <nav class="menu">
   <a href="index.html">Home</a>
@@ -12,6 +15,7 @@
       <a href="blackwhite.html">Black&White</a>
       <a href="bynight.html">By Night</a>
       <a href="people.html">People 人々</a>
+      <a href="buddha.html">Buddha 仏々</a>
     </div>
   </div>
 
@@ -31,3 +35,6 @@
   <a href="about.html">About</a>
   <a href="contact.html">Contact</a>
 </nav>
+`;
+
+document.getElementById("menu").innerHTML = menuHTML;
