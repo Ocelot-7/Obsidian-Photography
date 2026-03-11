@@ -171,6 +171,15 @@ const photos = {
     "IMGL7792-2_eycgbc",
     "633A4056_b6qkuo",
     "IMGL7735-2_t432k3",
+    "IMGL1615_xmmjsw",
+    "IMGL1809_edjx8h",
+    "IMGL2022_tpky3d",
+    "IMGL2021_exwys6",
+    "IMGL1687-4_l5ql0l",
+    "IMGL1805_ylvhnc",
+    "IMGL5907_enbs3m",
+    "IMGL1574-3_v9zama",
+    "IMGL1788-2_vgddv1",
 
 
   
@@ -345,6 +354,12 @@ jaune: [
   buddha: [
 
     "IMGL7139-2_evavfp",
+    "IMGL4531-3_k8c0ic",
+    "633A2876-2_pw4zfk",
+    "IMGL4515_o9oxem",
+    "IMGL4558-2_otc0nt",
+    "633A2819-2_t9iwkw",
+    "633A2823_yvxnef",
   
 
 
@@ -385,6 +400,30 @@ jaune: [
  people: [
   
  "IMGL1262-2_vperob",
+ "IMGL1628_u4vdqg",
+ "IMGL1472-2-2_wsn4re",
+ "IMGL8510-2_v0uikr",
+
+ "IMGL2047_oao8kz",
+ "IMGL6026_djlq7e",
+ "IMGL1615_xmmjsw",
+ "IMGL2031_vstfhy",
+ "IMGL6026_djlq7e",
+ "IMGL1604_hrpilr",
+ "IMGL1717_olhddz",
+ "IMGL8521_lfgizy",
+ "IMGL1692-2_hapvaf",
+ "IMGL2015_s0crl8",
+ "IMGL1452_zmyamn",
+ "IMGL1805_ylvhnc",
+ "IMGL1976_dpmdj0",
+ "IMGL1633_epxolu",
+ "IMGL1578_wkwxt1",
+ "IMGL1574-3_v9zama",
+ "IMGL1595_znvmkr",
+ "IMGL1783_joijri",
+ "IMGL1494-2_m9wi7u",
+ "IMGL2015_s0crl8",
 
  ],
 

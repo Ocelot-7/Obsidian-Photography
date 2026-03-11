@@ -128,3 +128,77 @@
 .theme-artwork .footer {
   background:#787166;
 }
+
+/* Bynight THEME */
+
+.theme-bynight .header {
+  background: rgb(16, 40, 67);
+}
+
+.theme-bynight h1 {
+  color: rgb(16, 40, 67);
+}
+
+.theme-bynight .submenu{
+  background:rgb(16, 40, 67);
+}
+
+.theme-bynight .footer {
+  background:rgb(16, 40, 67);
+}
+
+/* city THEME */
+
+.theme-city .header {
+  background: rgb(49, 66, 84);
+}
+
+.theme-city h1 {
+  color: rgb(49, 66, 84);
+}
+
+.theme-city .submenu{
+  background:rgb(49, 66, 84);
+}
+
+.theme-city .footer {
+  background:rgb(49, 66, 84);
+}
+
+/* buddha THEME */
+
+.theme-buddha .header {
+  background: rgb(185, 56, 36);
+}
+
+.theme-buddha h1 {
+  color:rgb(185, 56, 36);
+}
+
+.theme-buddha.submenu{
+  background:rgb(185, 56, 36);
+}
+
+.theme-buddha .footer {
+  background:rgb(185, 56, 36);
+}
+
+
+/* blackwhite THEME */
+
+.theme-blackwhite .header {
+  background: rgb(41, 37, 37);
+}
+
+.theme-blackwhite h1 {
+  color:rgb(41, 37, 37);
+}
+
+.theme-blackwhite .submenu{
+  background:rgb(41, 37, 37);
+}
+
+.theme-blackwhite .footer {
+  background:rgb(41, 37, 37);
+}
+
