@@ -60,19 +60,19 @@
 /* GREEN THEME */
 
 .theme-green .header {
-  background: rgb(0,90,50);
+  background: rgb(51, 67, 60);
 }
 
 .theme-green h1 {
-  color: rgb(0,90,50);
+  color: rgb(51, 67, 60);
 }
 
 .theme-green .submenu{
-  background: rgb(0,90,50);
+  background: rgb(51, 67, 60);
 }
 
 .theme-green .footer{
-  background: rgb(0,90,50);
+  background: rgb(51, 67, 60);
 }
 
 /* YELLOW THEME */
