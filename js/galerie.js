@@ -53,6 +53,48 @@ function deduplicatePhotos(list) {
   });
 }
 
+// ─── Masonry — horizontales sur 2 colonnes, hauteur ajustée au ratio réel ──
+function layoutMasonryItem(item, img) {
+  if (!img.naturalWidth || !img.naturalHeight) return;
+
+  const grid = item.parentElement;
+  if (!grid) return;
+
+  const gridStyle = getComputedStyle(grid);
+  const rowUnit = parseFloat(gridStyle.gridAutoRows) || 8;
+  const gap = parseFloat(gridStyle.rowGap) || 24;
+
+  const isLandscape = img.naturalWidth > img.naturalHeight;
+  item.classList.toggle("landscape", isLandscape);
+
+  const itemWidth = item.getBoundingClientRect().width;
+  const renderedHeight = itemWidth * (img.naturalHeight / img.naturalWidth);
+  const rowSpan = Math.ceil((renderedHeight + gap) / (rowUnit + gap));
+
+  item.style.gridRowEnd = `span ${rowSpan}`;
+}
+
+function initMasonryItem(item, img) {
+  // requestAnimationFrame : laisse le temps à l'élément d'être inséré dans le DOM
+  // (createImageElement l'initialise avant que l'appelant ne l'ajoute à la grille)
+  if (img.complete && img.naturalWidth) {
+    requestAnimationFrame(() => layoutMasonryItem(item, img));
+  } else {
+    img.addEventListener("load", () => requestAnimationFrame(() => layoutMasonryItem(item, img)));
+  }
+}
+
+let masonryResizeTimer;
+window.addEventListener("resize", () => {
+  clearTimeout(masonryResizeTimer);
+  masonryResizeTimer = setTimeout(() => {
+    document.querySelectorAll(".galerie a").forEach((item) => {
+      const img = item.querySelector("img");
+      if (img && img.complete && img.naturalWidth) layoutMasonryItem(item, img);
+    });
+  }, 200);
+});
+
 // ─── Création d'un élément image ────────────────────────────────────────────
 function createImageElement(entry, category, index) {
   const id  = resolveId(entry);
@@ -69,6 +111,7 @@ function createImageElement(entry, category, index) {
   img.classList.add("gallery-image");
 
   link.appendChild(img);
+  initMasonryItem(link, img);
 
   setTimeout(() => {
     img.classList.add("visible");
@@ -103,6 +146,22 @@ function generateHomeGalerie(count = 25) {
   selection.forEach(({ entry, category }, i) => {
     const element = createImageElement(entry, category, i);
     container.appendChild(element);
+  });
+}
+
+// ─── INDEX TILES — une photo random par catégorie ──────────────────────────
+function populateIndexTiles() {
+  document.querySelectorAll(".index-tile").forEach((tile) => {
+    const category = tile.dataset.category;
+    const list = photos[category];
+    if (!list || !list.length) return;
+
+    const entry = list[Math.floor(Math.random() * list.length)];
+    const id = resolveId(entry);
+    const img = tile.querySelector("img");
+
+    img.src = `${CLOUD_THUMB}/${id}`;
+    img.alt = getAlt(entry, category, 0);
   });
 }
 

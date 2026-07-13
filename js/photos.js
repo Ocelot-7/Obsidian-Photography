@@ -1,5 +1,6 @@
 const CLOUD = "https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto";
 // const CLOUD = "https://res.cloudinary.com/dhbmaw1bm/image/upload";
+const CLOUD_THUMB = "https://res.cloudinary.com/dhbmaw1bm/image/upload/w_800,q_auto,f_auto";
 
 
 
