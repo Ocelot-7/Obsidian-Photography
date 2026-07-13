@@ -84,6 +84,14 @@ body {
   display: flex;
 }
 
+.dropdown.open .submenu {
+  display: flex;
+}
+
+.dropdown > span {
+  cursor: pointer;
+}
+
 .submenu a {
   display: block;
 }
@@ -231,4 +239,47 @@ body {
 
 main {
   flex: 1;
+}
+
+/* MOBILE */
+
+@media (max-width: 640px) {
+  .header {
+    padding: 14px 20px;
+  }
+
+  .logo {
+    font-size: 15px;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 16px;
+  }
+
+  .menu a,
+  .menu span {
+    font-size: 13px;
+  }
+
+  .submenu {
+    position: static;
+    transform: none;
+    display: none;
+    padding: 10px 0 0 14px;
+    border-radius: 0;
+    backdrop-filter: none;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .dropdown.open .submenu {
+    display: flex;
+  }
+
+  .galerie {
+    column-count: 1;
+    padding: 0 12px;
+  }
 }

@@ -5,6 +5,7 @@ const CLOUD = "https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f
 
 const photos = {
   nippon: [
+    { id: "IMGL9507-2_v7b1qi", alt: "Temple japonais sous la neige, Kyoto" },
     "IMGL9507-2_v7b1qi",
     "IMGL9125_xi2v8p",
     "IMGL9022-2_rkc5iz",
@@ -142,6 +143,7 @@ const photos = {
     "IMGL0899-2_aukoso",
     "IMGL0173-2_krrrqt",
     "IMGL0720_p9tm35",
+    { id: "IMGL0720_p9tm35", alt: "Heron, Kyoto" },
     "IMGL0222_evahkk",
     "IMGL0145-2-2_tx4r8d",
     "IMGL0760_nz9tav",

@@ -38,3 +38,18 @@ const menuHTML = `
 `;
 
 document.getElementById("menu").innerHTML = menuHTML;
+
+document.querySelectorAll(".dropdown > span").forEach((trigger) => {
+  trigger.addEventListener("click", () => {
+    const dropdown = trigger.parentElement;
+    const isOpen = dropdown.classList.contains("open");
+    document.querySelectorAll(".dropdown.open").forEach((d) => d.classList.remove("open"));
+    if (!isOpen) dropdown.classList.add("open");
+  });
+});
+
+document.addEventListener("click", (e) => {
+  if (!e.target.closest(".dropdown")) {
+    document.querySelectorAll(".dropdown.open").forEach((d) => d.classList.remove("open"));
+  }
+});
