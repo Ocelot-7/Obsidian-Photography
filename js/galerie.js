@@ -57,6 +57,11 @@ function deduplicatePhotos(list) {
 function layoutMasonryItem(item, img) {
   if (!img.naturalWidth || !img.naturalHeight) return;
 
+  // dimensions intrinsèques exposées pour le SEO/accessibilité, même si le
+  // rendu réel est piloté par la grille (width/height CSS)
+  img.width = img.naturalWidth;
+  img.height = img.naturalHeight;
+
   const grid = item.parentElement;
   if (!grid) return;
 

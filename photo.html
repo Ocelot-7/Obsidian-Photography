@@ -99,6 +99,7 @@ body{
 <img id="photo">
 
 <script src="js/photos.js"></script>
+<script src="js/galerie.js"></script>
 
 <script>
 
@@ -121,7 +122,15 @@ for(const category in photos){
 
 // afficher image
 if(img){
-  document.getElementById("photo").src = `${CLOUD}/${img}`;
+  const photoEl = document.getElementById("photo");
+  photoEl.src = `${CLOUD}/${img}`;
+  photoEl.alt = currentCategory
+    ? getAlt(photos[currentCategory][currentIndex], currentCategory, currentIndex)
+    : "Obsidian Photography — photo";
+  photoEl.addEventListener("load", () => {
+    photoEl.width = photoEl.naturalWidth;
+    photoEl.height = photoEl.naturalHeight;
+  });
 }
 
 // photo suivante

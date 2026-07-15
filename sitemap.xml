@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
 
   <!-- Pages principales -->
   <url>
@@ -7,6 +8,10 @@
   </url>
   <url>
     <loc>https://ocelot-7.github.io/Obsidian-Photography/about.html</loc>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/IMGL1262-2_vperob.jpg</image:loc>
+      <image:caption>Thomas Eucat, portrait — Obsidian Photography</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://ocelot-7.github.io/Obsidian-Photography/contact.html</loc>
@@ -15,47 +20,1515 @@
   <!-- Catégories -->
   <url>
     <loc>https://ocelot-7.github.io/Obsidian-Photography/nippon.html</loc>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9507-2_v7b1qi</image:loc>
+      <image:caption>Temple japonais sous la neige, Kyoto</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9125_xi2v8p</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 2 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9022-2_rkc5iz</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 3 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9290_qkl7ms</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 4 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9455-2_k2gf4n</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 5 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL8016_abso7v</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 6 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7076_bvbf8d</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 7 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7079-2_wygdzy</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 8 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7085-2_vslaft</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 9 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7133-2_mwzhwz</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 10 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6308_m3wdzf</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 11 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6361-2_impjst</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 12 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6401_t0sgu3</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 13 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6361_o04q0l</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 14 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6308-2_dfy8bp</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 15 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A6188_fc5h7j</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 16 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A5834_qxhjbb</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 17 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A5836_l1cr8y</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 18 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A5935-2_r1itex</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 19 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A5342-2_oyh2vn</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 20 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A5350_mnpc5c</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 21 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A3955_fbaer4</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 22 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2655_rjyv6d</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 23 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A4353_rvbrzi</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 24 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2100_zv9vi1</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 25 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2315_sylxvg</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 26 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2332_tieznu</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 27 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2670_lifeof</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 28 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2647_da8bf9</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 29 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/v1767280805/IMGL1205_ekhgm3.jpg</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 30 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2876-2_ijjdyz</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 31 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2291_kzpht8</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 32 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2633_hsprzi</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 33 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2947-3_ipnlh1</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 34 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2948_dbigqw</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 35 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2823_yi1gyn</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 36 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2801-2_ehmumd</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 37 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2791_nrly1v</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 38 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2742_hbcanb</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 39 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2678_gdmuxc</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 40 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A9782_snev9q</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 41 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A9750-2_v9yu1p</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 42 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A9737_htbmdo</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 43 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A9774_lncvuz</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 44 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7139-2_evavfp</image:loc>
+      <image:caption>Japanese temple and street scene in Kyoto and Tokyo, Japan – photo 45 – Obsidian Photography</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://ocelot-7.github.io/Obsidian-Photography/city.html</loc>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0052_kadhr6</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 1 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0155_bbacvq</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 2 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0244_szszux</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 3 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0110_sffxzc</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 4 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0053_ebnt2j</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 5 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0222-2_vyemrc</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 6 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0683_g6hobz</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 7 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0600_gq3rui</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 8 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A4201-2_ccpn6k</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 9 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A0719-2_myeinr</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 10 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A1962_gghy9r</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 11 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6869_loq8ks</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 12 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL2213-2_znhicb</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 13 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0366_kiseoq</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 14 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A0787-2_bfnm8s</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 15 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0022_ng44nl</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 16 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6486_nm9ria</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 17 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6479_gh4r3j</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 18 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6508-2_ht6599</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 19 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0222-2_q6lsou</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 20 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL2289-3_yqhrcf</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 21 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0102_is13up</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 22 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A0668_zirvu8</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 23 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0106_znfah4</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 24 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6734_hcar2g</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 25 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A4107_uu4baf</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 26 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0135_n59qbt</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 27 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6503-5_idx04h</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 28 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6479-2_d7wk4f</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 29 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL2282_wdmhql</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 30 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0030_ffyepo</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 31 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A0545-3_tbwbtu</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 32 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0023_jls22d</image:loc>
+      <image:caption>Urban and street photography in Japan – photo 33 – Obsidian Photography</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://ocelot-7.github.io/Obsidian-Photography/animals.html</loc>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9574_yyfs0p</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 1 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9573_jkhaxs</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 2 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9617-6_iirn6r</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 3 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9617-3_znzcpm</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 4 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9611-7_icvtgj</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 5 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1824-4_ff1nic</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 6 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1877-2_q2sw5t</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 7 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1874_ffzmwk</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 8 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A4646_pxyvi9</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 9 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A4645_p2vyfe</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 10 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A4851_ucuix0</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 11 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A4773_koghen</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 12 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6576-2_zbyfji</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 13 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A4052_cuq4jg</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 14 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A0337_lzgtym</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 15 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A0381-2_ojc6ke</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 16 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A0355-3_kmm3qa</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 17 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0323_n4nfkw</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 18 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7735-2_t432k3</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 19 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7794-2_ok8p7s</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 20 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7686_mvc54s</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 21 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7735_ktld6j</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 22 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7803-2_tchn2m</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 23 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7721_ngwgda</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 24 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7696_l4bck2</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 25 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7687_gafpn0</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 26 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7697_ofxpom</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 27 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7720_zhmoz1</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 28 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7792-2_eycgbc</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 29 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A4056_b6qkuo</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 30 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A0355-5_v9jirb</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 31 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0904_qcfgko</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 32 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/MGL0899_kdca9a</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 33 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0058-2_fs8vii</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 34 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0717_rz16j9</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 35 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0058_f7wsy8</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 36 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0899-2_aukoso</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 37 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0173-2_krrrqt</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 38 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0720_p9tm35</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 39 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0222_evahkk</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 40 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0145-2-2_tx4r8d</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 41 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0760_nz9tav</image:loc>
+      <image:caption>Wildlife and animals photography in Japan – photo 42 – Obsidian Photography</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://ocelot-7.github.io/Obsidian-Photography/blackwhite.html</loc>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/v1767280805/IMGL1205_ekhgm3.jpg</image:loc>
+      <image:caption>Black and white photography in Japan – photo 1 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0084_ttuta6</image:loc>
+      <image:caption>Black and white photography in Japan – photo 2 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9617-7_qymeu0</image:loc>
+      <image:caption>Black and white photography in Japan – photo 3 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7785_shac7l</image:loc>
+      <image:caption>Black and white photography in Japan – photo 4 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6653_be7igj</image:loc>
+      <image:caption>Black and white photography in Japan – photo 5 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6648_pvlcjd</image:loc>
+      <image:caption>Black and white photography in Japan – photo 6 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6647_g29lkh</image:loc>
+      <image:caption>Black and white photography in Japan – photo 7 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6508-3_ouclo0</image:loc>
+      <image:caption>Black and white photography in Japan – photo 8 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A4646_pxyvi9</image:loc>
+      <image:caption>Black and white photography in Japan – photo 9 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A4645_p2vyfe</image:loc>
+      <image:caption>Black and white photography in Japan – photo 10 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A4056_kxx1kr</image:loc>
+      <image:caption>Black and white photography in Japan – photo 11 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2876-2_ijjdyz</image:loc>
+      <image:caption>Black and white photography in Japan – photo 12 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2819-2_phpifn</image:loc>
+      <image:caption>Black and white photography in Japan – photo 13 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A9747_xc6jb3</image:loc>
+      <image:caption>Black and white photography in Japan – photo 14 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A9668_dkksrt</image:loc>
+      <image:caption>Black and white photography in Japan – photo 15 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A8526_hhzmsl</image:loc>
+      <image:caption>Black and white photography in Japan – photo 16 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A8262-2_om5rzu</image:loc>
+      <image:caption>Black and white photography in Japan – photo 17 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A8255_fqbvfv</image:loc>
+      <image:caption>Black and white photography in Japan – photo 18 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A8154_ggv7bg</image:loc>
+      <image:caption>Black and white photography in Japan – photo 19 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6671_slrzx3</image:loc>
+      <image:caption>Black and white photography in Japan – photo 20 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6649_hhaf0m</image:loc>
+      <image:caption>Black and white photography in Japan – photo 21 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9865-2_fplmno</image:loc>
+      <image:caption>Black and white photography in Japan – photo 22 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6734-2_yjuhti</image:loc>
+      <image:caption>Black and white photography in Japan – photo 23 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7687_gafpn0</image:loc>
+      <image:caption>Black and white photography in Japan – photo 24 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7697_ofxpom</image:loc>
+      <image:caption>Black and white photography in Japan – photo 25 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7792-2_eycgbc</image:loc>
+      <image:caption>Black and white photography in Japan – photo 26 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A4056_b6qkuo</image:loc>
+      <image:caption>Black and white photography in Japan – photo 27 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7735-2_t432k3</image:loc>
+      <image:caption>Black and white photography in Japan – photo 28 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1615_xmmjsw</image:loc>
+      <image:caption>Black and white photography in Japan – photo 29 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1809_edjx8h</image:loc>
+      <image:caption>Black and white photography in Japan – photo 30 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL2022_tpky3d</image:loc>
+      <image:caption>Black and white photography in Japan – photo 31 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL2021_exwys6</image:loc>
+      <image:caption>Black and white photography in Japan – photo 32 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1687-4_l5ql0l</image:loc>
+      <image:caption>Black and white photography in Japan – photo 33 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1805_ylvhnc</image:loc>
+      <image:caption>Black and white photography in Japan – photo 34 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL5907_enbs3m</image:loc>
+      <image:caption>Black and white photography in Japan – photo 35 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1574-3_v9zama</image:loc>
+      <image:caption>Black and white photography in Japan – photo 36 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1788-2_vgddv1</image:loc>
+      <image:caption>Black and white photography in Japan – photo 37 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0323_n4nfkw</image:loc>
+      <image:caption>Black and white photography in Japan – photo 38 – Obsidian Photography</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://ocelot-7.github.io/Obsidian-Photography/bynight.html</loc>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A4201-2_ccpn6k</image:loc>
+      <image:caption>Night photography in Japan – photo 1 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6391_fyjyxc</image:loc>
+      <image:caption>Night photography in Japan – photo 2 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6233_ty24q5</image:loc>
+      <image:caption>Night photography in Japan – photo 3 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6382-2_mm82yc</image:loc>
+      <image:caption>Night photography in Japan – photo 4 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6302_r9rbyi</image:loc>
+      <image:caption>Night photography in Japan – photo 5 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A5312_oikwmo</image:loc>
+      <image:caption>Night photography in Japan – photo 6 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6227-5_mgwxwc</image:loc>
+      <image:caption>Night photography in Japan – photo 7 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A0505_qmrxzk</image:loc>
+      <image:caption>Night photography in Japan – photo 8 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0296_joeng5</image:loc>
+      <image:caption>Night photography in Japan – photo 9 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6302-2_owzop7</image:loc>
+      <image:caption>Night photography in Japan – photo 10 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A0442_kvknxc</image:loc>
+      <image:caption>Night photography in Japan – photo 11 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6229_c7x8hc</image:loc>
+      <image:caption>Night photography in Japan – photo 12 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A8435_rgwvrv</image:loc>
+      <image:caption>Night photography in Japan – photo 13 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A4198_x7ldor</image:loc>
+      <image:caption>Night photography in Japan – photo 14 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0312_xqjqd3</image:loc>
+      <image:caption>Night photography in Japan – photo 15 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A4181_glesvk</image:loc>
+      <image:caption>Night photography in Japan – photo 16 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A0461-2_qxbyr4</image:loc>
+      <image:caption>Night photography in Japan – photo 17 – Obsidian Photography</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://ocelot-7.github.io/Obsidian-Photography/people.html</loc>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1262-2_vperob</image:loc>
+      <image:caption>Portrait photography in Japan – photo 1 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1628_u4vdqg</image:loc>
+      <image:caption>Portrait photography in Japan – photo 2 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1472-2-2_wsn4re</image:loc>
+      <image:caption>Portrait photography in Japan – photo 3 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL8510-2_v0uikr</image:loc>
+      <image:caption>Portrait photography in Japan – photo 4 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL2047_oao8kz</image:loc>
+      <image:caption>Portrait photography in Japan – photo 5 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6026_djlq7e</image:loc>
+      <image:caption>Portrait photography in Japan – photo 6 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1615_xmmjsw</image:loc>
+      <image:caption>Portrait photography in Japan – photo 7 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL2031_vstfhy</image:loc>
+      <image:caption>Portrait photography in Japan – photo 8 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1604_hrpilr</image:loc>
+      <image:caption>Portrait photography in Japan – photo 9 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1717_olhddz</image:loc>
+      <image:caption>Portrait photography in Japan – photo 10 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL8521_lfgizy</image:loc>
+      <image:caption>Portrait photography in Japan – photo 11 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1692-2_hapvaf</image:loc>
+      <image:caption>Portrait photography in Japan – photo 12 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL2015_s0crl8</image:loc>
+      <image:caption>Portrait photography in Japan – photo 13 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1452_zmyamn</image:loc>
+      <image:caption>Portrait photography in Japan – photo 14 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1805_ylvhnc</image:loc>
+      <image:caption>Portrait photography in Japan – photo 15 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1976_dpmdj0</image:loc>
+      <image:caption>Portrait photography in Japan – photo 16 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1633_epxolu</image:loc>
+      <image:caption>Portrait photography in Japan – photo 17 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1578_wkwxt1</image:loc>
+      <image:caption>Portrait photography in Japan – photo 18 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1574-3_v9zama</image:loc>
+      <image:caption>Portrait photography in Japan – photo 19 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1595_znvmkr</image:loc>
+      <image:caption>Portrait photography in Japan – photo 20 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1783_joijri</image:loc>
+      <image:caption>Portrait photography in Japan – photo 21 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1494-2_m9wi7u</image:loc>
+      <image:caption>Portrait photography in Japan – photo 22 – Obsidian Photography</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://ocelot-7.github.io/Obsidian-Photography/buddha.html</loc>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7139-2_evavfp</image:loc>
+      <image:caption>Buddha and temple photography in Japan – photo 1 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL4531-3_k8c0ic</image:loc>
+      <image:caption>Buddha and temple photography in Japan – photo 2 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2876-2_pw4zfk</image:loc>
+      <image:caption>Buddha and temple photography in Japan – photo 3 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL4515_o9oxem</image:loc>
+      <image:caption>Buddha and temple photography in Japan – photo 4 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL4558-2_otc0nt</image:loc>
+      <image:caption>Buddha and temple photography in Japan – photo 5 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2819-2_t9iwkw</image:loc>
+      <image:caption>Buddha and temple photography in Japan – photo 6 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2823_yvxnef</image:loc>
+      <image:caption>Buddha and temple photography in Japan – photo 7 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL1050_wtdpdc</image:loc>
+      <image:caption>Buddha and temple photography in Japan – photo 8 – Obsidian Photography</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://ocelot-7.github.io/Obsidian-Photography/artwork.html</loc>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_6974_kbmdgm</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 1 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_8584_ypf9pv</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 2 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_8082_sdchva</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 3 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_7965_2_upnqew</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 4 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_6964_as8q33</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 5 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_7777_zgfkc8</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 6 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_6975_hk4zfe</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 7 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_6986_qvqsra</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 8 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_6950_noes5e</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 9 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_6956_wf7x7t</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 10 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_6982_gzfvoq</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 11 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_6954_dm40bc</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 12 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_6955_orrheb</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 13 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_6937_2_g3li7p</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 14 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_8748_no2eyf</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 15 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_7805_kx9ojh</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 16 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_8499_uxedsg</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 17 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_8077_qhzuhd</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 18 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_8698_epbugi</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 19 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_7965_twozgt</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 20 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_7779_ipd4hb</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 21 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_6973_2_qfaq5j</image:loc>
+      <image:caption>Digital illustration, Japanese inspired art – artwork 22 – Obsidian Photography</image:caption>
+    </image:image>
   </url>
 
   <!-- Couleurs -->
   <url>
     <loc>https://ocelot-7.github.io/Obsidian-Photography/index-orange.html</loc>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/kiyomizu_dera_roof_2</image:loc>
+      <image:caption>Explore the stunning red pagoda of Kiyomizu-dera temple, its vibrant colors contrasting with the serene backdrop of Kyoto's city skyline and clear winter skies.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/torii_gate_autumn</image:loc>
+      <image:caption>Explore the serene beauty of a red torii gate in Kyoto, Japan. Captured from an intriguing angle with bare tree branches framing the scene.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/lighthouse_twilight</image:loc>
+      <image:caption>Explore the striking contrast of a vibrant red monument set against an inky-blue sky, capturing the essence of architectural beauty and dramatic lighting.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/autumn_torii_shrine</image:loc>
+      <image:caption>Explore the serene beauty of an autumnal Japanese shrine, featuring a striking red torii gate and traditional architecture amidst vibrant fall colors. Perfect for travel photography enthusiasts.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/japanese_temple_roof_2</image:loc>
+      <image:caption>Explore the vibrant red torii gates of Fushimi Inari Shrine in Kyoto, Japan. This stunning photograph captures the spiritual beauty and architectural splendor of this iconic landmark.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/japanese_pagoda_blue_sky</image:loc>
+      <image:caption>Explore the stunning architecture of Kyoto’s iconic Kiyomizu-dera Temple Pagoda, captured in breathtaking morning light against a vibrant blue sky. This photo is perfect for travelers seeking Japanese temple photography inspiration.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/japanese_pavilion_red</image:loc>
+      <image:caption>Explore the serene beauty of a red-roofed pagoda in Kyoto's ancient temple complex, captured on a crisp winter day with vibrant colors and stunning architecture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/japanese_shrine_red_torii</image:loc>
+      <image:caption>Explore the serene beauty of Kyoto's red torii gates amidst vibrant autumn leaves. This stunning travel photo captures the essence of Japan's ancient shrines and seasonal landscapes.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/torii_gate_twilight</image:loc>
+      <image:caption>Explore the vibrant red torii gates of Kyoto, Japan. Captured from an unusual angle with dramatic lighting and deep blue skies.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/pagoda_red_sky</image:loc>
+      <image:caption>Explore the stunning red pagoda of Kyoto, captured from an innovative angle under a vivid blue sky. This iconic Japanese landmark is a must-see for travelers and photography enthusiasts.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/kiyomizu_dera_roof</image:loc>
+      <image:caption>Explore the stunning contrast of Kyoto's iconic red temple roof set against a vibrant blue sky, capturing the essence of Japanese architecture in this serene cityscape.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/kiyomizu_dera_pagoda_winter</image:loc>
+      <image:caption>Explore the stunning red pagoda of Kyoto, Japan, captured under a vibrant blue sky. This iconic temple is a must-see for travelers and photography enthusiasts alike.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/japanese_shrine_red_torii_3</image:loc>
+      <image:caption>Explore the serene beauty of a famous Japanese temple featuring vibrant red torii gates, a stone bridge, and a tranquil stream. Perfect for travel photography enthusiasts.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/traditional_temple_bright_sky</image:loc>
+      <image:caption>Explore the stunning architectural details of a Kyoto temple, featuring its iconic red pagoda set against a vivid blue sky. This photograph captures the serene beauty of traditional Japanese architecture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/pagoda_vivid_red</image:loc>
+      <image:caption>Explore the vibrant red roof of an iconic Kyoto pagoda under a stunning clear blue sky. This unique angle captures the essence of Japanese architecture and cultural beauty.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/japan_torii_gate</image:loc>
+      <image:caption>Explore the serene beauty of Kyoto's iconic red torii gate, captured under morning clouds. A must-see for travelers exploring Japan's temples and shrines.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/japanese_shrine_red_torii_4</image:loc>
+      <image:caption>Explore the serene beauty of Kyoto's iconic temples, featuring a striking red torii gate and traditional stone bridge. This picturesque scene captures the essence of Japanese architecture and tranquility.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/kiyomizu_dera_pagoda_vibrant</image:loc>
+      <image:caption>Explore the serene beauty of Kyoto's iconic temples captured in stunning morning light. Experience the majesty and history of Japan’s ancient architecture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/japanese_pagoda_evening</image:loc>
+      <image:caption>Explore the iconic red pagoda of Kiyomizu-dera temple in Kyoto, Japan. Captured with dramatic lighting and stunning architecture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/pagoda_roof_details</image:loc>
+      <image:caption>Explore the intricate roof details of Kyoto's iconic temples during winter, capturing the vibrant red and gold hues against a crisp blue sky.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/kyoto_red_torii_sunset</image:loc>
+      <image:caption>Explore the vibrant red torii gate of Kyoto's Fushimi Inari Shrine during a stunning sunset, capturing the iconic Japanese landmark in all its glory.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/kiyomizu_dera_pagoda_10</image:loc>
+      <image:caption>Explore the vibrant red pagodas of Fushimi Inari Shrine in Kyoto, Japan. Capture stunning architecture against a brilliant blue sky.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/red_pagoda_sky</image:loc>
+      <image:caption>Explore the intricate details and vibrant colors of this iconic Kyoto pagoda under a clear blue sky, perfect for travel photography enthusiasts.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/japanese_temple_roof</image:loc>
+      <image:caption>Explore the iconic red pagoda at Kiyomizu-dera Temple in Kyoto, Japan. Capture stunning architecture against a vibrant blue sky.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/kiyomizu_dera_pagoda_11</image:loc>
+      <image:caption>Explore the stunning red pagoda architecture of Kyoto, Japan. This captivating travel photo captures the intricate details and vibrant colors against a clear blue sky.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/kiyomizu_dera_pagoda_2</image:loc>
+      <image:caption>Explore the vibrant beauty of Kyoto's iconic red pagoda against a stunning clear blue sky. Capture the essence of Japanese architecture in this stunning travel photography shot.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/kiyomizu_dera_pagoda_autumn</image:loc>
+      <image:caption>Experience the vibrant colors and serene atmosphere of Kyoto’s iconic Kiyomizu-dera Temple captured during a stunning sunrise.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/kiyomizu_dera_pagoda_4</image:loc>
+      <image:caption>Explore the vibrant beauty of Kyoto's iconic red pagoda set against a stunning blue sky, capturing its serene and majestic atmosphere.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/kiyomizu_dera_pagoda_5</image:loc>
+      <image:caption>Experience the vibrant beauty of Kyoto's iconic red pagoda set against a stunning blue sky, capturing the essence of Japanese architecture and serene atmosphere.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/kiyomizu_dera_pagoda_7</image:loc>
+      <image:caption>Explore the vibrant red pagoda of Kyoto, Japan, captured from an elevated angle under a brilliant blue sky. A stunning travel photography shot that highlights Japanese architecture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/kiyomizu_dera_pagoda_6</image:loc>
+      <image:caption>Explore the vibrant beauty of Kyoto's iconic pagoda under winter sunlight, capturing its intricate architecture and striking red hues.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A5834_qxhjbb</image:loc>
+      <image:caption>Orange tones photography in Japan – photo 32 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL8016_abso7v</image:loc>
+      <image:caption>Orange tones photography in Japan – photo 33 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL8169-2_hnin0q</image:loc>
+      <image:caption>Explore the vibrant red and orange hues of this striking architectural structure set against a stunning deep blue sky. A must-see for photography enthusiasts!</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL3056_rj8gsi</image:loc>
+      <image:caption>Explore the stunning winter view of Kyoto's iconic Kiyomizu-dera temple, featuring its vibrant red pagoda and intricate architecture under a crisp blue sky.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL8089_oefz9i</image:loc>
+      <image:caption>Explore the stunning architecture of Kyoto's iconic temple, captured from a unique angle with vibrant orange roofs and a clear blue sky backdrop.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL2981_cq2una</image:loc>
+      <image:caption>Explore the iconic red pagoda of Kiyomizu-dera Temple in Kyoto, Japan. This stunning angle captures the vibrant architecture against a clear blue sky.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL3061_qwqvlh</image:loc>
+      <image:caption>Explore the stunning Kiyomizu-dera Temple, showcasing its iconic red pagoda against a vivid blue sky. Capture the essence of Japanese architecture and culture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL2981-2_efhcop</image:loc>
+      <image:caption>Explore the vibrant red pagoda of Kyoto's famous temple, captured from an unique angle against a crisp blue sky. A must-see for travel photography enthusiasts.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL3226_eyhiiz</image:loc>
+      <image:caption>Explore the serene beauty of Kyoto's iconic red pagoda temple, captured against a stunning clear blue sky. This stunning travel photography showcases traditional Japanese architecture and vibrant colors.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL2919_wva2bb</image:loc>
+      <image:caption>Explore the serene beauty of the Kiyomizu-dera Temple in Kyoto, Japan. This stunning red pagoda stands majestically against a clear blue sky.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL3231_mradbm</image:loc>
+      <image:caption>Explore the vibrant beauty of Kyoto's iconic red pagodas under a stunning blue sky. This photograph captures the essence of traditional Japanese architecture in its finest detail.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL8067_e1tzwg</image:loc>
+      <image:caption>Explore the stunning red and green rooflines of Kyoto's iconic Kiyomizu-dera Temple under a vibrant blue sky. Experience Japanese architecture at its finest!</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL2942-4_yp62kf</image:loc>
+      <image:caption>Discover the stunning red pagoda at Kiyomizu-dera, Kyoto's iconic temple. Capture its vibrant hues and serene atmosphere.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9413-2-3_xaon44</image:loc>
+      <image:caption>Orange tones photography in Japan – photo 45 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9801_davkrw</image:loc>
+      <image:caption>Explore the serene beauty of Kyoto's iconic red pagoda temples with this stunning travel photography. Capture the essence of Japanese architecture and cultural heritage in one frame.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9734_ztvbwg</image:loc>
+      <image:caption>Explore the iconic red torii gates of Fushimi Inari Shrine, captured from a unique angle with dramatic lighting. A must-see for anyone visiting Japan's spiritual heart.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL2813_p81pdx</image:loc>
+      <image:caption>Explore the serene beauty of Kyoto's iconic temples, featuring vibrant red pagodas and the Japanese flag fluttering in the breeze.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9798_ubh1vs</image:loc>
+      <image:caption>Explore the iconic red torii gates of Fushimi Inari Shrine, a stunning temple complex in Kyoto, Japan. Capture the vibrant colors and serene atmosphere with your camera.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0547-2_asqlld</image:loc>
+      <image:caption>Explore the iconic red torii gates of Fushimi Inari Shrine in Kyoto, Japan. Captured with precision and beauty by Ashtar Fox.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL8454_dcgz6s</image:loc>
+      <image:caption>Explore the serene beauty of a Kyoto temple during autumn, featuring vibrant red torii gates and traditional architecture amidst golden foliage.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9823_cra6rl</image:loc>
+      <image:caption>Explore the vibrant colors of a Kyoto torii gate and bridge during fall, capturing serene Japanese architecture amidst lush foliage.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL2765_gei45w</image:loc>
+      <image:caption>Explore the stunning red pagoda of Kiyomizu-dera temple in Kyoto, Japan. This iconic landmark is set against a backdrop of lush greenery and a dynamic blue sky with clouds.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://ocelot-7.github.io/Obsidian-Photography/index-rouge.html</loc>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7133-2_mwzhwz</image:loc>
+      <image:caption>Red tones photography in Japan – photo 1 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A5342-2_oyh2vn</image:loc>
+      <image:caption>Red tones photography in Japan – photo 2 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7076_bvbf8d</image:loc>
+      <image:caption>Red tones photography in Japan – photo 3 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7079-2_wygdzy</image:loc>
+      <image:caption>Red tones photography in Japan – photo 4 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9125_xi2v8p</image:loc>
+      <image:caption>Red tones photography in Japan – photo 5 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6361-2_impjst</image:loc>
+      <image:caption>Red tones photography in Japan – photo 6 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A9737_htbmdo</image:loc>
+      <image:caption>Red tones photography in Japan – photo 7 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9507-2_v7b1qi</image:loc>
+      <image:caption>Red tones photography in Japan – photo 8 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9290_qkl7ms</image:loc>
+      <image:caption>Red tones photography in Japan – photo 9 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A6188_fc5h7j</image:loc>
+      <image:caption>Red tones photography in Japan – photo 10 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A5834_qxhjbb</image:loc>
+      <image:caption>Red tones photography in Japan – photo 11 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6401_t0sgu3</image:loc>
+      <image:caption>Red tones photography in Japan – photo 12 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7034-4_axplpr</image:loc>
+      <image:caption>Red tones photography in Japan – photo 13 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A5350_mnpc5c</image:loc>
+      <image:caption>Red tones photography in Japan – photo 14 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6794_bygzlw</image:loc>
+      <image:caption>Red tones photography in Japan – photo 15 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A5935-2_r1itex</image:loc>
+      <image:caption>Red tones photography in Japan – photo 16 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A0381-2_ojc6ke</image:loc>
+      <image:caption>Red tones photography in Japan – photo 17 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A0337_lzgtym</image:loc>
+      <image:caption>Red tones photography in Japan – photo 18 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL8467_luqxmg</image:loc>
+      <image:caption>Explore the serene beauty of a Kyoto temple torii gate surrounded by vibrant fall foliage. Capture stunning travel photography with this iconic landmark.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9823_cra6rl</image:loc>
+      <image:caption>Explore the vibrant colors of a Kyoto torii gate and bridge during fall, capturing serene Japanese architecture amidst lush foliage.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9709_zlasps</image:loc>
+      <image:caption>Explore the serene beauty of a traditional Japanese shrine gate under a cloudy sky. This iconic red pagoda stands as a symbol of cultural heritage in Kyoto, Japan.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6382-2_mm82yc</image:loc>
+      <image:caption>Red tones photography in Japan – photo 22 – Obsidian Photography</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://ocelot-7.github.io/Obsidian-Photography/index-bleu.html</loc>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/sunburst_cloudscape</image:loc>
+      <image:caption>Explore the beauty of a sunburst breaking through dense cloud cover in this stunning landscape photo. Perfect for nature and travel enthusiasts.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/kyoto_sunset_autumn</image:loc>
+      <image:caption>Experience the serene beauty of Kyoto at sunset with stunning views of autumn foliage and traditional Japanese rooftops. Capture the essence of Japan's cultural heritage in this breathtaking shot.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/kyoto_sunset_dramatic</image:loc>
+      <image:caption>Capture the breathtaking view of Kyoto at sunrise with stunning sunbeams and clouds. Explore Japanese architecture in this travel photography portfolio.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/ferris_wheel_amusement_park</image:loc>
+      <image:caption>Explore the thrill of an amusement park with this stunning shot featuring a towering ferris wheel and vibrant red roller coaster against a clear blue sky. Perfect for travel photography enthusiasts!</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/castle_moat_sunset</image:loc>
+      <image:caption>Explore the serene beauty of a historic castle's moat at sunset. Capture stunning reflections and architectural details.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/sunset_over_japanese_architecture</image:loc>
+      <image:caption>Experience the tranquil beauty of a serene sunset overlooking traditional Japanese architecture and stunning mountain views. Capture this moment in your travel photography portfolio.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL8169-2_hnin0q</image:loc>
+      <image:caption>Explore the vibrant red and orange hues of this striking architectural structure set against a stunning deep blue sky. A must-see for photography enthusiasts!</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL3226_eyhiiz</image:loc>
+      <image:caption>Explore the serene beauty of Kyoto's iconic red pagoda temple, captured against a stunning clear blue sky. This stunning travel photography showcases traditional Japanese architecture and vibrant colors.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2647_da8bf9</image:loc>
+      <image:caption>Blue tones photography in Japan – photo 9 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2655_rjyv6d</image:loc>
+      <image:caption>Blue tones photography in Japan – photo 10 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL2919_wva2bb</image:loc>
+      <image:caption>Explore the serene beauty of the Kiyomizu-dera Temple in Kyoto, Japan. This stunning red pagoda stands majestically against a clear blue sky.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL8067_e1tzwg</image:loc>
+      <image:caption>Explore the stunning red and green rooflines of Kyoto's iconic Kiyomizu-dera Temple under a vibrant blue sky. Experience Japanese architecture at its finest!</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL3061_qwqvlh</image:loc>
+      <image:caption>Explore the stunning Kiyomizu-dera Temple, showcasing its iconic red pagoda against a vivid blue sky. Capture the essence of Japanese architecture and culture.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7265_ftcldl</image:loc>
+      <image:caption>Explore breathtaking sunbeams piercing through dramatic clouds over a stunning mountainous landscape. This unique travel photo captures the essence of nature's beauty.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6741_yi1yeo</image:loc>
+      <image:caption>Explore the serene beauty of a giant Guanyin statue bathed in morning light, set against a clear blue sky. This stunning photograph captures the spiritual essence and architectural grandeur of this iconic landmark.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A7585_tj66gm</image:loc>
+      <image:caption>Explore the thrill of an amusement park with this stunning shot featuring a Ferris wheel and roller coaster under a clear blue sky. Perfect for travel enthusiasts seeking adventure photography inspiration.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A7552_e1mfnw</image:loc>
+      <image:caption>Explore the vibrant amusement park scene featuring a giant Ferris wheel and roller coaster under a dramatic cloudy sky. A must-see for travel photography enthusiasts!</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7602_gwyged</image:loc>
+      <image:caption>Experience the serene beauty of Kyoto's cityscape at sunset. This stunning photo captures the vibrant autumn foliage, traditional architecture, and a full moon rising over the mountains.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7584_inet1k</image:loc>
+      <image:caption>Explore the serene beauty of a historic castle's moat at dusk, capturing reflections that mirror the dramatic sky. Discover more travel photography from Thomas (Ashtar Fox) across various locations.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A7552-2_g3ijdg</image:loc>
+      <image:caption>Explore the vibrant scene of a giant Ferris wheel against a dramatic cloudy sky in this stunning travel photograph.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A7602_ucktyp</image:loc>
+      <image:caption>Explore the vibrant Cosmo World Ferris Wheel in this stunning sunset travel photo. Capture the magic of this iconic landmark with our high-resolution images.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A7171_phsgma</image:loc>
+      <image:caption>Explore the intricate artistry of traditional Japanese sake barrels adorned with a striking whale design. This unique photo captures the cultural heritage and craftsmanship behind these iconic containers.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A7585-3_rwbjox</image:loc>
+      <image:caption>Explore the vibrant world of amusement parks! This image captures the iconic ferris wheel and thrilling roller coaster under a bright blue sky, perfect for thrill-seekers and families alike.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7265-2_zzx3qa</image:loc>
+      <image:caption>Explore the breathtaking beauty of a mountainous region where sunlight pierces dramatic cloud formations, creating a stunning natural spectacle.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A0588_endkhl</image:loc>
+      <image:caption>Explore the stunning interior of a contemporary building featuring an enormous Earth globe hanging from the ceiling, perfect for travelers interested in architecture and unique design elements.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7596_pnsigi</image:loc>
+      <image:caption>Explore the tranquil beauty of a temple complex at twilight, featuring stunning architecture and a majestic sky. Experience the serenity of this iconic location.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2670_xtiqs1</image:loc>
+      <image:caption>Blue tones photography in Japan – photo 27 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2633_nmlayg</image:loc>
+      <image:caption>Blue tones photography in Japan – photo 28 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2679_kg2d7p</image:loc>
+      <image:caption>Blue tones photography in Japan – photo 29 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2655_ri31ji</image:loc>
+      <image:caption>Blue tones photography in Japan – photo 30 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2540_x5ybgf</image:loc>
+      <image:caption>Blue tones photography in Japan – photo 31 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2581_tkrkwh</image:loc>
+      <image:caption>Blue tones photography in Japan – photo 32 – Obsidian Photography</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://ocelot-7.github.io/Obsidian-Photography/index-rose.html</loc>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A7585-3_rwbjox</image:loc>
+      <image:caption>Explore the vibrant world of amusement parks! This image captures the iconic ferris wheel and thrilling roller coaster under a bright blue sky, perfect for thrill-seekers and families alike.</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://ocelot-7.github.io/Obsidian-Photography/index-jaune.html</loc>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7139_jdirjl</image:loc>
+      <image:caption>Yellow tones photography in Japan – photo 1 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A8955_hiefub</image:loc>
+      <image:caption>Yellow tones photography in Japan – photo 2 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A4997_xezelb</image:loc>
+      <image:caption>Yellow tones photography in Japan – photo 3 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A0563_g9uvgm</image:loc>
+      <image:caption>Yellow tones photography in Japan – photo 4 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7143_wb18ym</image:loc>
+      <image:caption>Yellow tones photography in Japan – photo 5 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6924_ydjow4</image:loc>
+      <image:caption>Yellow tones photography in Japan – photo 6 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7145_ra40lh</image:loc>
+      <image:caption>Yellow tones photography in Japan – photo 7 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL0600_brdbbl</image:loc>
+      <image:caption>Yellow tones photography in Japan – photo 8 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7142_lchheg</image:loc>
+      <image:caption>Yellow tones photography in Japan – photo 9 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A8544_mwwa8n</image:loc>
+      <image:caption>Yellow tones photography in Japan – photo 10 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL6711_rifu1c</image:loc>
+      <image:caption>Yellow tones photography in Japan – photo 11 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A0381-2_ojc6ke</image:loc>
+      <image:caption>Yellow tones photography in Japan – photo 12 – Obsidian Photography</image:caption>
+    </image:image>
   </url>
   <url>
     <loc>https://ocelot-7.github.io/Obsidian-Photography/index-vert.html</loc>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A4773_koghen</image:loc>
+      <image:caption>Green nature photography in Japan – photo 1 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2801-2_ehmumd</image:loc>
+      <image:caption>Green nature photography in Japan – photo 2 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A8875-2_zzr88o</image:loc>
+      <image:caption>Green nature photography in Japan – photo 3 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A8066_slrnfe</image:loc>
+      <image:caption>Green nature photography in Japan – photo 4 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A5635_bxjnci</image:loc>
+      <image:caption>Green nature photography in Japan – photo 5 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A5543_ww7k8e</image:loc>
+      <image:caption>Green nature photography in Japan – photo 6 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A5540-2_wvro56</image:loc>
+      <image:caption>Green nature photography in Japan – photo 7 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A7197_urzwqh</image:loc>
+      <image:caption>Green nature photography in Japan – photo 8 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A5637_acebts</image:loc>
+      <image:caption>Green nature photography in Japan – photo 9 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A8117_kwymyf</image:loc>
+      <image:caption>Green nature photography in Japan – photo 10 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A7185_mgt0x5</image:loc>
+      <image:caption>Green nature photography in Japan – photo 11 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2771_lthfsz</image:loc>
+      <image:caption>Green nature photography in Japan – photo 12 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2791-2_rngryh</image:loc>
+      <image:caption>Green nature photography in Japan – photo 13 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2812_g3fo2u</image:loc>
+      <image:caption>Green nature photography in Japan – photo 14 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A9371_brrzmw</image:loc>
+      <image:caption>Green nature photography in Japan – photo 15 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A5571_d2uocd</image:loc>
+      <image:caption>Green nature photography in Japan – photo 16 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A5572_iptyzp</image:loc>
+      <image:caption>Green nature photography in Japan – photo 17 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A2801-2_o6r6m9</image:loc>
+      <image:caption>Green nature photography in Japan – photo 18 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A8147_uxi4q7</image:loc>
+      <image:caption>Green nature photography in Japan – photo 19 – Obsidian Photography</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A8151_n0xybu</image:loc>
+      <image:caption>Green nature photography in Japan – photo 20 – Obsidian Photography</image:caption>
+    </image:image>
   </url>
 
 </urlset>
