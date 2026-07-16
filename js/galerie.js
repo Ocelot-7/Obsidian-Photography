@@ -170,6 +170,41 @@ function populateIndexTiles() {
   });
 }
 
+// ─── SCATTER — cartes photo éparpillées, façon mood board ──────────────────
+function pickRandomPhoto() {
+  const categories = Object.keys(photos);
+  const category = categories[Math.floor(Math.random() * categories.length)];
+  const list = photos[category];
+  const entry = list[Math.floor(Math.random() * list.length)];
+  return { id: resolveId(entry), alt: getAlt(entry, category, 0) };
+}
+
+function shuffleScatterCard(card) {
+  const img = card.querySelector("img");
+  const { id, alt } = pickRandomPhoto();
+
+  const preload = new Image();
+  preload.onload = () => {
+    img.classList.remove("visible");
+    setTimeout(() => {
+      img.src = preload.src;
+      img.alt = alt;
+      requestAnimationFrame(() => img.classList.add("visible"));
+    }, 700);
+  };
+  preload.src = `${CLOUD_THUMB}/${id}`;
+}
+
+function populateScatterCards() {
+  document.querySelectorAll(".scatter-card").forEach((card) => {
+    const img = card.querySelector("img");
+    const { id, alt } = pickRandomPhoto();
+    img.src = `${CLOUD_THUMB}/${id}`;
+    img.alt = alt;
+    img.addEventListener("load", () => img.classList.add("visible"), { once: true });
+  });
+}
+
 // ─── CATEGORY ───────────────────────────────────────────────────────────────
 function generateCategoryGalerie(category, count = 14) {
   const container = document.getElementById("galerie-random");

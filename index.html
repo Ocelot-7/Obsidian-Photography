@@ -54,6 +54,23 @@
   <div class="hero-scroll-cue">↓</div>
 </section>
 
+<!-- DÉSACTIVÉ temporairement — à reprendre avec plus de photos + drag interactif
+<section class="scatter-section">
+  <h2 class="scatter-title">Regard 一瞥</h2>
+  <div class="scatter-grid">
+    <div class="scatter-card"><img alt="" loading="lazy"></div>
+    <div class="scatter-card"><img alt="" loading="lazy"></div>
+    <div class="scatter-card"><img alt="" loading="lazy"></div>
+    <div class="scatter-card"><img alt="" loading="lazy"></div>
+    <div class="scatter-card"><img alt="" loading="lazy"></div>
+    <div class="scatter-card"><img alt="" loading="lazy"></div>
+    <div class="scatter-card"><img alt="" loading="lazy"></div>
+    <div class="scatter-card"><img alt="" loading="lazy"></div>
+    <div class="scatter-card"><img alt="" loading="lazy"></div>
+  </div>
+</section>
+-->
+
 <section class="index-grid" aria-label="Parcourir par catégorie">
   <a class="index-tile" href="nippon.html" data-category="nippon">
     <div class="tile-photo"><img alt="Nippon 日本" loading="lazy"></div>
@@ -101,6 +118,7 @@
 <script>
   populateIndexTiles();
   generateHomeGalerie(24);
+  // populateScatterCards(); // DÉSACTIVÉ temporairement — à reprendre plus tard
 
   (function(){
     const slides = document.querySelectorAll('.hero-slide');
@@ -111,6 +129,15 @@
       slides[current].classList.add('active');
     }, 5000);
   })();
+
+  // Section "Regard" désactivée temporairement — à reprendre plus tard
+  // (function(){
+  //   setInterval(() => {
+  //     const cards = document.querySelectorAll('.scatter-card');
+  //     const card = cards[Math.floor(Math.random() * cards.length)];
+  //     shuffleScatterCard(card);
+  //   }, 2800);
+  // })();
 </script>
 
 </body>

@@ -328,6 +328,62 @@ main {
   50% { transform: translate(-50%, 10px); }
 }
 
+/* HOME — SCATTER, cartes photo éparpillées façon mood board */
+
+.scatter-section {
+  position: relative;
+  background: rgb(8, 1, 90);
+  padding: 90px 20px 120px;
+  overflow: hidden;
+}
+
+.scatter-title {
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  letter-spacing: 0.2em;
+  margin: 0 0 60px;
+  opacity: 0.85;
+}
+
+.scatter-grid {
+  position: relative;
+  max-width: 1100px;
+  height: 620px;
+  margin: 0 auto;
+}
+
+.scatter-card {
+  position: absolute;
+  border-radius: 12px;
+  overflow: hidden;
+  background: rgba(255,255,255,0.04);
+  box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+}
+
+.scatter-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  opacity: 0;
+  transition: opacity 1s ease;
+}
+
+.scatter-card img.visible {
+  opacity: 1;
+}
+
+.scatter-card:nth-child(1) { width: 170px; height: 220px; top: 30px;  left: 4%;  transform: rotate(-8deg); }
+.scatter-card:nth-child(2) { width: 150px; height: 190px; top: 0px;   left: 21%; transform: rotate(6deg); }
+.scatter-card:nth-child(3) { width: 210px; height: 270px; top: 110px; left: 37%; transform: rotate(-4deg); z-index: 2; }
+.scatter-card:nth-child(4) { width: 165px; height: 210px; top: 20px;  left: 62%; transform: rotate(10deg); }
+.scatter-card:nth-child(5) { width: 160px; height: 205px; top: 150px; left: 80%; transform: rotate(-9deg); }
+.scatter-card:nth-child(6) { width: 185px; height: 235px; top: 320px; left: 13%; transform: rotate(5deg); }
+.scatter-card:nth-child(7) { width: 150px; height: 190px; top: 380px; left: 32%; transform: rotate(-11deg); }
+.scatter-card:nth-child(8) { width: 175px; height: 225px; top: 340px; left: 53%; transform: rotate(8deg); }
+.scatter-card:nth-child(9) { width: 165px; height: 210px; top: 300px; left: 73%; transform: rotate(-6deg); }
+
 /* HOME — INDEX GRID */
 
 .section-title {
@@ -483,5 +539,50 @@ main {
 
   .index-tile:nth-child(even) {
     margin-top: 32px;
+  }
+
+  .scatter-section {
+    padding: 56px 0 64px;
+  }
+
+  .scatter-title {
+    margin-bottom: 34px;
+  }
+
+  .scatter-grid {
+    height: auto;
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    overflow-x: auto;
+    padding: 10px 20px 14px;
+    max-width: 100%;
+    scroll-snap-type: x proximity;
+  }
+
+  .scatter-card,
+  .scatter-card:nth-child(1),
+  .scatter-card:nth-child(2),
+  .scatter-card:nth-child(3),
+  .scatter-card:nth-child(4),
+  .scatter-card:nth-child(5),
+  .scatter-card:nth-child(6),
+  .scatter-card:nth-child(7),
+  .scatter-card:nth-child(8),
+  .scatter-card:nth-child(9) {
+    position: static;
+    flex: 0 0 auto;
+    width: 150px;
+    height: 195px;
+    transform: none;
+    scroll-snap-align: center;
+  }
+
+  .scatter-card:nth-child(odd) {
+    transform: rotate(-4deg);
+  }
+
+  .scatter-card:nth-child(even) {
+    transform: rotate(4deg);
   }
 }
