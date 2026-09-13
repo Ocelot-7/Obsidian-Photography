@@ -154,6 +154,80 @@ function generateHomeGalerie(count = 25) {
   });
 }
 
+// ─── HERO — photos aléatoires à chaque chargement de la home ───────────────
+// piochées uniquement dans "nippon" — pas de portrait de Thomas, sélection plus ciblée
+const HERO_CATEGORIES = ["nippon"];
+
+function populateHeroSlides(count = 5) {
+  const slides = document.querySelectorAll(".hero-slide");
+  if (!slides.length || !photos) return;
+
+  const allPhotos = HERO_CATEGORIES
+    .filter((cat) => photos[cat])
+    .flatMap((cat) => photos[cat].map(entry => ({ entry, category: cat })));
+
+  const seenIds = new Set();
+  const unique  = [];
+  for (const item of allPhotos) {
+    const id = resolveId(item.entry);
+    if (!seenIds.has(id)) {
+      seenIds.add(id);
+      unique.push(item);
+    }
+  }
+
+  const shuffled  = shuffleArray(unique);
+  const selection = shuffled.slice(0, Math.min(count, shuffled.length, slides.length));
+
+  slides.forEach((slide, i) => {
+    if (i >= selection.length) {
+      slide.remove();
+      return;
+    }
+    const { entry, category } = selection[i];
+    const id = resolveId(entry);
+    // seule la 1ère photo (visible) charge tout de suite ; les autres
+    // attendent leur tour pour ne pas saturer le chargement initial
+    slide.dataset.src = `https://res.cloudinary.com/dhbmaw1bm/image/upload/w_1920,q_auto,f_auto/${id}`;
+    slide.dataset.alt = getAlt(entry, category, i);
+  });
+
+  const remaining = [...slides].filter((s) => s.dataset.src);
+  if (!remaining.length) return;
+
+  loadHeroSlide(remaining[0]);
+  remaining[0].classList.add("active");
+  if (remaining[1]) preloadHeroSlide(remaining[1]);
+}
+
+function loadHeroSlide(slide) {
+  if (!slide || slide.src) return;
+  slide.src = slide.dataset.src;
+  slide.alt = slide.dataset.alt;
+  slide.fetchPriority = "high";
+}
+
+function preloadHeroSlide(slide) {
+  if (!slide || !slide.dataset.src || slide.dataset.preloaded) return;
+  slide.dataset.preloaded = "1";
+  new Image().src = slide.dataset.src;
+}
+
+function advanceHeroSlide(currentIndex) {
+  const slides = [...document.querySelectorAll(".hero-slide")];
+  if (!slides.length) return currentIndex;
+
+  const nextIndex = (currentIndex + 1) % slides.length;
+  loadHeroSlide(slides[nextIndex]);
+  slides[currentIndex].classList.remove("active");
+  slides[nextIndex].classList.add("active");
+
+  const followingIndex = (nextIndex + 1) % slides.length;
+  preloadHeroSlide(slides[followingIndex]);
+
+  return nextIndex;
+}
+
 // ─── INDEX TILES — une photo random par catégorie ──────────────────────────
 function populateIndexTiles() {
   document.querySelectorAll(".index-tile").forEach((tile) => {

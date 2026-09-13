@@ -41,11 +41,11 @@
 </header>
 
 <section class="hero-visual">
-  <img class="hero-slide active" src="https://res.cloudinary.com/dhbmaw1bm/image/upload/w_1920,q_auto,f_auto/IMGL9507-2_v7b1qi" alt="Temple japonais sous la neige, Kyoto">
-  <img class="hero-slide" src="https://res.cloudinary.com/dhbmaw1bm/image/upload/w_1920,q_auto,f_auto/633A4201-2_ccpn6k" alt="Rue de nuit illuminée au néon, Japon">
-  <img class="hero-slide" src="https://res.cloudinary.com/dhbmaw1bm/image/upload/w_1920,q_auto,f_auto/IMGL9574_yyfs0p" alt="Portrait animalier, renard des sables">
-  <img class="hero-slide" src="https://res.cloudinary.com/dhbmaw1bm/image/upload/w_1920,q_auto,f_auto/IMGL7139-2_evavfp" alt="Statue de Buddha, temple japonais">
-  <img class="hero-slide" src="https://res.cloudinary.com/dhbmaw1bm/image/upload/w_1920,q_auto,f_auto/IMGL0084_ttuta6" alt="Photographie noir et blanc, Japon">
+  <img class="hero-slide active" alt="">
+  <img class="hero-slide" alt="">
+  <img class="hero-slide" alt="">
+  <img class="hero-slide" alt="">
+  <img class="hero-slide" alt="">
   <div class="hero-overlay"></div>
   <div class="hero-content">
     <h1>Obsidian Photography 狐</h1>
@@ -116,17 +116,27 @@
 <script src="js/galerie.js"></script>
 <script src="js/footer.js"></script>
 <script>
-  populateIndexTiles();
-  generateHomeGalerie(24);
+  // la cover charge en priorité ; le reste de la page (tuiles + galerie)
+  // n'appelle ses ~30 images qu'une fois la cover arrivée, pour ne pas
+  // lui faire concurrence sur la bande passante au premier affichage
+  populateHeroSlides(5);
+
+  const heroImg = document.querySelector(".hero-slide.active");
+  const startRestOfPage = () => {
+    populateIndexTiles();
+    generateHomeGalerie(24);
+  };
+  if (heroImg && !heroImg.complete) {
+    heroImg.addEventListener("load", startRestOfPage, { once: true });
+  } else {
+    startRestOfPage();
+  }
   // populateScatterCards(); // DÉSACTIVÉ temporairement — à reprendre plus tard
 
   (function(){
-    const slides = document.querySelectorAll('.hero-slide');
     let current = 0;
     setInterval(() => {
-      slides[current].classList.remove('active');
-      current = (current + 1) % slides.length;
-      slides[current].classList.add('active');
+      current = advanceHeroSlide(current);
     }, 5000);
   })();
 
