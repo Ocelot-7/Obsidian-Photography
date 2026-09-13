@@ -207,11 +207,9 @@ const photos = {
     blackwhite: [
   { id: "man_with_long_hair_shearling_coat_cloudy_day", alt: "Man with long hair wearing a shearling coat and scarf against a cloudy sky", description: "Explore the serene beauty of this man's portrait against a dramatic, cloudy sky. Experience the charm of nature and urban landscapes in this stunning travel photograph." },
   { id: "travelers_temple_smile", alt: "three people smiling in front of a wooden temple with statues inside", description: "capture the joy of travelers exploring an ancient Japanese temple with this travel photo from Ashtar Fox's portfolio." },
-  { id: "man_on_beach_cloudy", alt: "Man in scarf and jacket standing on beach with cloudy sky", description: "Explore the serene beauty of a man in a scarf and jacket at the beach under a cloudy sky, perfect for travel photography enthusiasts." },
   { id: "kyoto_river_evening", alt: "Kyoto river scene with traditional architecture and mountains in background", description: "Explore the serene beauty of Kyoto's riverside scene featuring traditional Japanese architecture and distant mountain views. A must-see for travel photographers." },
   { id: "sensoji_temple_day", alt: "black and white temple tower with intricate architecture", description: "Explore the stunning black-and-white beauty of a traditional Japanese temple tower, capturing its architectural details in this serene urban scene." },
   { id: "kyoto_cityscape_cloudy_day", alt: "Kyoto street scene with traditional and modern architecture under cloudy sky", description: "Explore the captivating blend of old and new in Kyoto's streets. This stunning black-and-white photo captures the essence of Japanese urban life, featuring a mix of architectural styles against a dramatic cloudy sky." },
-  { id: "man_with_scarf_wooden_shelf", alt: "man with scarf in front of wooden shelf filled with statues", description: "Explore the captivating travel photography of a man wearing a scarf against an intricate wooden shelf adorned with statues, perfect for travelers and architecture enthusiasts." },
   { id: "temple_lantern_silhouette", alt: "Silhouetted temple lantern with intricate carvings against a pale sky", description: "Explore the serene beauty of this ancient temple's lantern at dawn, featuring exquisite carvings and a tranquil atmosphere." },
   { id: "street_art_night", alt: "nighttime street scene with intricate mural art on building facade", description: "Explore the vibrant street art at this nighttime cityscape featuring an elaborate mural on a building's exterior. A must-see for urban photography enthusiasts and those interested in street art and architecture." },
   { id: "osaka_castle_moat", alt: "Historic stone walls and moat surrounding a cityscape under cloudy skies.", description: "Explore the serene beauty of Osaka's historic castle moat, framed by ancient stone walls and modern skyscrapers against a dramatic sky. A must-see for history enthusiasts and photography lovers alike." },
@@ -233,15 +231,10 @@ const photos = {
   { id: "multi_tiered_pagoda_bw", alt: "black and white photograph of a multi-tiered pagoda with intricate architecture", description: "Explore the architectural beauty of this stunning multi-tiered pagoda captured in black and white, showcasing its intricate details and historical significance." },
   { id: "kyoto_pagoda_monochrome", alt: "Monochrome view of a traditional Japanese pagoda with intricate architecture and ornate roof tiles.", description: "Explore the stunning monochrome details of Kyoto's iconic pagoda, showcasing its intricate architecture and ornate roof tiles in this captivating travel photograph." },
   { id: "kyoto_five_story_pagoda_bw", alt: "Kyoto's Five-Story Wooden Pagoda in black and white", description: "Explore the iconic Five-Story Wooden Pagoda of Kyoto through a dramatic black-and-white lens. Capture the intricate details and serene atmosphere of this historic landmark." },
-  { id: "man_waterfront_cloudy", alt: "man wearing shearling jacket and scarf near waterfront with cloudy sky", description: "Explore travel photos of a man in a shearling jacket by the waterfront, capturing serene moments against a cloudy sky. Perfect for nature lovers and those interested in urban landscapes." },
   { id: "overpass_industrial_pipe", alt: "urban overpass with industrial pipes and cityscape in black and white", description: "Explore the gritty beauty of an urban overpass with industrial pipes and a cityscape backdrop. This striking black-and-white shot captures the unique architectural details and urban atmosphere." },
   { id: "metal_structure_web_framework", alt: "geometric metal structure with cylindrical tower against cloudy sky", description: "Explore the intricate geometric metal framework of a modern architectural marvel set against an overcast sky, capturing the essence of urban design and industrial aesthetics." },
-  { id: "man_with_long_hair", alt: "man with long hair wearing scarf and jacket against cloudy sky", description: "captivating travel photo of a man in a scarf against an overcast sky, perfect for exploring urban landscapes and street photography enthusiasts." },
-  { id: "man_in_leather_jacket_outdoors", alt: "Man in leather jacket with scarf against a fence and trees", description: "A stylish man poses in his leather jacket by a rustic wooden fence, blending urban fashion with nature. Explore travel photography from various locations." },
   { id: "dragon_statue_details", alt: "dragon statue with intricate scales and horns", description: "Explore the intricate details of a dragon statue in this stunning black-and-white photograph. Perfect for travelers interested in architecture, sculpture, or mythical creatures." },
-  { id: "man_in_front_of_shrine", alt: "man wearing scarf in front of wooden shrine with statues", description: "captivating travel photo of a man in front of an intricately carved wooden shrine adorned with statues, perfect for those exploring cultural landmarks and architecture." },
   { id: "japanese_temple_smoke", alt: "smoking incense sticks at a temple with blurred background", description: "Explore the serene ambiance of an ancient Japanese temple with this striking shot of smoking incense sticks against a blurred natural backdrop." },
-  { id: "man_long_hair_wooden_shelves", alt: "man with long hair wearing a shearling jacket and scarf in front of wooden shelves", description: "Explore the charm of this man with long hair standing in front of rustic wooden shelves, capturing the essence of a quiet, contemplative moment. #Photography #TravelPhotos #ManWithLongHair" },
     "v1767280805/IMGL1205_ekhgm3.jpg",
     "IMGL0084_ttuta6",
     "IMGL9617-7_qymeu0",
@@ -620,7 +613,7 @@ jaune: [
 
  ],
  people: [
-  
+  { id: "man_in_leather_jacket_outdoors", alt: "Man in leather jacket with scarf against a fence and trees", description: "A stylish man poses in his leather jacket by a rustic wooden fence, blending urban fashion with nature. Explore travel photography from various locations." },
  "IMGL1262-2_vperob",
  "IMGL1628_u4vdqg",
  "IMGL1472-2-2_wsn4re",
