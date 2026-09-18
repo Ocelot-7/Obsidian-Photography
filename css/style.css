@@ -43,7 +43,7 @@ body {
 }
 
 .menu a,
-.menu span {
+.menu button {
   font-size: 15px;
   letter-spacing: 0.15em;
   text-decoration: none;
@@ -51,8 +51,15 @@ body {
   white-space: nowrap;
 }
 
+.menu button {
+  background: none;
+  border: 0;
+  padding: 0;
+  font-family: inherit;
+}
+
 .menu a:hover,
-.menu span:hover {
+.menu button:hover {
   opacity: 0.8;
 }
 
@@ -80,7 +87,8 @@ body {
   text-align: center;
 }
 
-.dropdown:hover .submenu {
+.dropdown:hover .submenu,
+.dropdown:focus-within .submenu {
   display: flex;
 }
 
@@ -88,7 +96,7 @@ body {
   display: flex;
 }
 
-.dropdown > span {
+.dropdown > button {
   cursor: pointer;
 }
 
@@ -230,6 +238,10 @@ body.minimal-page{
   max-width:350px;
   height:auto;
   border-radius:16px;
+}
+
+.contact-email a{
+  color:inherit;
 }
 
 .minimal-container{
@@ -474,7 +486,7 @@ main {
   }
 
   .menu a,
-  .menu span {
+  .menu button {
     font-size: 13px;
   }
 

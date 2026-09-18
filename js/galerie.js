@@ -42,6 +42,15 @@ function resolveId(entry) {
   return typeof entry === "string" ? entry : entry.id;
 }
 
+// ─── Page de chaque catégorie (retour depuis photo.html) ────────────────────
+const CATEGORY_PAGES = {
+  nippon: "nippon.html", city: "city.html", animals: "animals.html",
+  blackwhite: "blackwhite.html", bynight: "bynight.html", people: "people.html",
+  buddha: "buddha.html", drawings: "artwork.html", me: "about.html",
+  rouge: "index-rouge.html", rose: "index-rose.html", bleu: "index-bleu.html",
+  orange: "index-orange.html", vert: "index-vert.html", jaune: "index-jaune.html",
+};
+
 // ─── Déduplique en tenant compte des objets et des strings ──────────────────
 function deduplicatePhotos(list) {
   const seen = new Set();
@@ -71,6 +80,8 @@ function layoutMasonryItem(item, img) {
 
   const isLandscape = img.naturalWidth > img.naturalHeight;
   item.classList.toggle("landscape", isLandscape);
+  // une horizontale occupe 2 colonnes : le navigateur reprend une version plus large
+  if (img.srcset) img.sizes = isLandscape ? SIZES_LANDSCAPE : SIZES_PORTRAIT;
 
   const itemWidth = item.getBoundingClientRect().width;
   const renderedHeight = itemWidth * (img.naturalHeight / img.naturalWidth);
@@ -101,15 +112,27 @@ window.addEventListener("resize", () => {
 });
 
 // ─── Création d'un élément image ────────────────────────────────────────────
+// largeurs servies par Cloudinary pour la grille — le navigateur choisit selon
+// la taille d'affichage et la densité d'écran (le 2500 px reste pour photo.html)
+const GRID_WIDTHS = [600, 900, 1300, 1800];
+const SIZES_PORTRAIT  = "(max-width: 640px) 50vw, 33vw";
+const SIZES_LANDSCAPE = "(max-width: 640px) 100vw, 66vw";
+
+function cloudUrl(width, id) {
+  return `https://res.cloudinary.com/dhbmaw1bm/image/upload/w_${width},q_auto,f_auto/${id}`;
+}
+
 function createImageElement(entry, category, index) {
   const id  = resolveId(entry);
   const alt = getAlt(entry, category, index);
 
   const link = document.createElement("a");
-  link.href = `photo.html?img=${id}`;
+  link.href = `photo.html?img=${encodeURIComponent(id)}&cat=${encodeURIComponent(category)}`;
 
   const img = document.createElement("img");
-  img.src      = `${CLOUD}/${id}`;
+  img.srcset   = GRID_WIDTHS.map((w) => `${cloudUrl(w, id)} ${w}w`).join(", ");
+  img.sizes    = SIZES_PORTRAIT;
+  img.src      = cloudUrl(900, id);
   img.alt      = alt;
   img.loading  = "lazy";
   img.decoding = "async";
@@ -118,9 +141,11 @@ function createImageElement(entry, category, index) {
   link.appendChild(img);
   initMasonryItem(link, img);
 
-  setTimeout(() => {
-    img.classList.add("visible");
-  }, index * 60);
+  // apparition en cascade une fois l'image arrivée (délai plafonné, sinon
+  // les dernières photos d'une grande catégorie mettraient des secondes)
+  const reveal = () => setTimeout(() => img.classList.add("visible"), Math.min(index, 12) * 60);
+  if (img.complete && img.naturalWidth) reveal();
+  else img.addEventListener("load", reveal, { once: true });
 
   return link;
 }

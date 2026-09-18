@@ -1,6 +1,5 @@
 const footerHTML = `
 <footer class="footer">
-
   <div class="footer-content">
 
     <div class="footer-left">
@@ -10,17 +9,12 @@ const footerHTML = `
     <div class="footer-right">
       <a href="about.html">About</a>
       <a href="contact.html">Contact</a>
-
-    <a href="https://www.instagram.com/obsidian_photography_" target="_blank">
-      Instagram
-    </a>
-  </div>
+      <a href="https://www.instagram.com/obsidian_photography_" target="_blank" rel="noopener">
+        Instagram
+      </a>
     </div>
 
   </div>
-
-
-
 </footer>
 `;
 

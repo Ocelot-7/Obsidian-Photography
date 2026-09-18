@@ -7,7 +7,7 @@ const menuHTML = `
   <a href="index.html">Home</a>
 
   <div class="dropdown">
-    <span>Photos 写真</span>
+    <button type="button" aria-expanded="false" aria-haspopup="true">Photos 写真</button>
     <div class="submenu">
       <a href="nippon.html">Nippon</a>
       <a href="city.html">City</a>
@@ -20,12 +20,13 @@ const menuHTML = `
   </div>
 
   <div class="dropdown">
-    <span>Colors 色</span>
+    <button type="button" aria-expanded="false" aria-haspopup="true">Colors 色</button>
     <div class="submenu">
       <a href="index-orange.html">Orange 橙</a>
       <a href="index-rouge.html">Red 赤</a>
       <a href="index-bleu.html">Blue 青</a>
-      <a href="index-rose.html">Pink ピンク</a>
+      <!-- Rose masquée tant qu'elle n'a qu'une photo -->
+      <!-- <a href="index-rose.html">Pink ピンク</a> -->
       <a href="index-jaune.html">Yellow 黄色</a>
       <a href="index-vert.html">Green 緑</a>
     </div>
@@ -39,17 +40,29 @@ const menuHTML = `
 
 document.getElementById("menu").innerHTML = menuHTML;
 
-document.querySelectorAll(".dropdown > span").forEach((trigger) => {
+const closeDropdowns = () => {
+  document.querySelectorAll(".dropdown.open").forEach((d) => {
+    d.classList.remove("open");
+    d.querySelector("button").setAttribute("aria-expanded", "false");
+  });
+};
+
+document.querySelectorAll(".dropdown > button").forEach((trigger) => {
   trigger.addEventListener("click", () => {
     const dropdown = trigger.parentElement;
     const isOpen = dropdown.classList.contains("open");
-    document.querySelectorAll(".dropdown.open").forEach((d) => d.classList.remove("open"));
-    if (!isOpen) dropdown.classList.add("open");
+    closeDropdowns();
+    if (!isOpen) {
+      dropdown.classList.add("open");
+      trigger.setAttribute("aria-expanded", "true");
+    }
   });
 });
 
 document.addEventListener("click", (e) => {
-  if (!e.target.closest(".dropdown")) {
-    document.querySelectorAll(".dropdown.open").forEach((d) => d.classList.remove("open"));
-  }
+  if (!e.target.closest(".dropdown")) closeDropdowns();
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") closeDropdowns();
 });
