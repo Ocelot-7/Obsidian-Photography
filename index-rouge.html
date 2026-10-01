@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="sable">
 <head>
 <meta charset="UTF-8">
-<title>Rouge 赤 — Obsidian Photography</title>
+<title>Red 赤 — Obsidian Photography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Red-toned photography from Japan – vermilion temples, torii gates and bold crimson colours by Obsidian Photography.">
 <meta property="og:title" content="Rouge 赤 — Obsidian Photography">
 <meta property="og:description" content="Red-toned photography from Japan – vermilion temples, torii gates and bold crimson colours.">
@@ -10,14 +11,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ashtar.fr/index-rouge.html">
 <link rel="canonical" href="https://ashtar.fr/index-rouge.html">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
-<link rel="icon" type="image/png" href="https://res.cloudinary.com/dhbmaw1bm/image/upload/w_96,h_96,c_fill,q_auto,f_png/IMGL1050_wtdpdc">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/colors.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -139,18 +133,36 @@
   ]
 }
 </script>
+<link rel="icon" type="image/png" href="https://res.cloudinary.com/dhbmaw1bm/image/upload/w_96,h_96,c_fill,q_auto,f_png/IMGL1050_wtdpdc">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Michroma&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&text=%E7%8B%90&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>try {
+  document.documentElement.dataset.theme = localStorage.getItem("v2-theme") || "sable";
+  document.documentElement.lang = localStorage.getItem("v2-lang") || "en";
+} catch (e) {}</script>
 </head>
-<body class="theme-red">
-<header class="header">
-<div id="menu"></div>
-</header>
-<h1>Rouge - 赤</h1>
-<div class="galerie" id="galerie-random"></div>
-<div id="footer"></div>
-<script src="js/menu.js"></script>
+<body data-series="rouge">
+
+<main class="wrap page">
+  <div class="block-head label"><a href="index.html#travaux">← <span data-fr="Travaux">Works</span></a><span id="series-count"></span></div>
+  <div class="intro-row">
+    <h1 class="series-title"><span data-fr="Rouge">Red</span><span class="jp">赤</span></h1>
+    <span class="seal large" role="img" aria-label="狐 — kitsune, the fox"><span>狐</span></span>
+  </div>
+
+  <div class="grid" id="grid"></div>
+  <nav class="series-next" id="series-next" aria-label="Next series"></nav>
+
+  <footer id="footer"></footer>
+</main>
+
 <script src="js/photos.js"></script>
-<script src="js/galerie.js"></script>
-<script src="js/footer.js"></script>
-<script>generateCategoryGalerie("rouge", 14);</script>
+<script src="js/covers.js"></script>
+<script src="js/site.js"></script>
+<script src="js/series.js"></script>
 </body>
 </html>

@@ -1,189 +1,98 @@
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="sable">
 <head>
-<meta charset="utf-8">
+<meta charset="UTF-8">
 <title>Photo — Obsidian Photography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="A single photograph from the Obsidian Photography portfolio.">
 <meta name="robots" content="noindex, follow">
-
 <link rel="icon" type="image/png" href="https://res.cloudinary.com/dhbmaw1bm/image/upload/w_96,h_96,c_fill,q_auto,f_png/IMGL1050_wtdpdc">
-<link rel="stylesheet" href="css/style.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-
-<style>
-
-body{
-  background:#0e0e0e;
-  margin:0;
-}
-
-/* IMAGE */
-
-#photo{
-  display:block;
-
-  max-width:90vw;
-  max-height:85vh;
-
-  width:auto;
-  height:auto;
-
-  margin:60px auto;
-  border-radius:20px;
-  box-shadow:0 20px 40px rgba(0,0,0,0.4);
-}
-
-/* BACK */
-
-.back{
-  color:white;
-  text-decoration:none;
-  font-size:12px;
-  letter-spacing:0.15em;
-
-  position:fixed;
-  top:24px;
-  left:24px;
-
-  opacity:0.7;
-}
-
-.back:hover{
-  opacity:1;
-}
-
-/* NAVIGATION */
-
-.nav{
-  position:fixed;
-  top:50%;
-  transform:translateY(-50%);
-
-  background:none;
-  border:none;
-
-  color:white;
-  font-size:34px;
-
-  cursor:pointer;
-  opacity:0.6;
-}
-
-.nav:hover{
-  opacity:1;
-}
-
-.prev{
-  left:30px;
-}
-
-.next{
-  right:30px;
-}
-
-</style>
-
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Michroma&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&text=%E7%8B%90&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>try {
+  document.documentElement.dataset.theme = localStorage.getItem("v2-theme") || "sable";
+  document.documentElement.lang = localStorage.getItem("v2-lang") || "en";
+} catch (e) {}</script>
 </head>
+<body class="viewer" data-nav="none">
 
-<body>
+<header class="v-bar label">
+  <a id="back" href="index.html">← <span data-fr="Retour">Back</span></a>
+  <span class="v-right"><span id="count"></span><span data-theme-dots></span><button data-lang-toggle></button></span>
+</header>
 
-<a class="back" id="back" href="index.html">← BACK</a>
+<main class="v-stage">
+  <button class="v-arrow prev" id="prev" aria-label="Previous photo">←</button>
+  <img id="photo" class="loading" alt="">
+  <button class="v-arrow next" id="next" aria-label="Next photo">→</button>
+</main>
 
-<button id="prev" class="nav prev" aria-label="Previous photo">←</button>
-<button id="next" class="nav next" aria-label="Next photo">→</button>
-
-<img id="photo">
+<p class="v-cap" id="cap"></p>
 
 <script src="js/photos.js"></script>
-<script src="js/galerie.js"></script>
-
+<script src="js/covers.js"></script>
+<script src="js/site.js"></script>
 <script>
+const params = new URLSearchParams(location.search);
+const wanted = params.get("img");
+const indexIn = (key) => (photos[key] || []).findIndex((entry) => resolveId(entry) === wanted);
 
-const params = new URLSearchParams(window.location.search);
-const img = params.get("img");
+// série d'origine (paramètre cat) si la photo y est, sinon la première qui la contient
+let key = params.get("cat");
+if (!key || indexIn(key) === -1) key = Object.keys(photos).find((k) => indexIn(k) !== -1);
+// même ordre mélangé que la page de série d'où l'on vient
+const list = key ? seriesList(key) : [];
+let index = list.findIndex((entry) => resolveId(entry) === wanted);
+const series = findSeries(key);
 
-const indexIn = (category) =>
-  (photos[category] || []).findIndex((entry) => resolveId(entry) === img);
-
-// catégorie d'origine (paramètre cat) si la photo y est, sinon la première qui la contient
-let currentCategory = null;
-let currentIndex = -1;
-
-const requested = params.get("cat");
-if (requested && indexIn(requested) !== -1) {
-  currentCategory = requested;
-  currentIndex = indexIn(requested);
-} else {
-  for (const category in photos) {
-    const index = indexIn(category);
-    if (index !== -1) {
-      currentCategory = category;
-      currentIndex = index;
-      break;
-    }
-  }
-}
-
-const photoUrl = (entry) =>
-  `photo.html?img=${encodeURIComponent(resolveId(entry))}&cat=${encodeURIComponent(currentCategory)}`;
-
-// afficher image
-if (img) {
-  const photoEl = document.getElementById("photo");
-  photoEl.src = `${CLOUD}/${img}`;
-  photoEl.alt = currentCategory
-    ? getAlt(photos[currentCategory][currentIndex], currentCategory, currentIndex)
-    : "Obsidian Photography — photo";
-  photoEl.addEventListener("load", () => {
-    photoEl.width = photoEl.naturalWidth;
-    photoEl.height = photoEl.naturalHeight;
-  });
-}
-
-// retour : page précédente si on vient du site, sinon la page de la catégorie
+const photoEl = document.getElementById("photo");
 const back = document.getElementById("back");
-if (currentCategory && CATEGORY_PAGES[currentCategory]) {
-  back.href = CATEGORY_PAGES[currentCategory];
+if (series) { back.href = series.href; back.innerHTML = `← ${nameHTML(series)} ${series.jp}`; applyLang(back); }
+
+function show() {
+  const entry = list[index];
+  photoEl.classList.add("loading");
+  photoEl.addEventListener("load", () => photoEl.classList.remove("loading"), { once: true });
+  photoEl.sizes = "92vw";
+  photoEl.srcset = srcset(entry);
+  photoEl.src = url(2000, entry);
+  const name = series ? `${series.name} ${series.jp}` : "Obsidian Photography";
+  photoEl.alt = entryAlt(entry, `${name} — photo ${index + 1}`);
+  document.getElementById("cap").textContent = entryAlt(entry, "");
+  document.getElementById("count").textContent = `${pad(index + 1)} / ${pad(list.length)}`;
+  document.title = `${name} — ${pad(index + 1)} — Obsidian Photography`;
+
+  // précharge la suivante pour une navigation instantanée
+  const pre = new Image();
+  pre.sizes = "92vw";
+  pre.srcset = srcset(list[(index + 1) % list.length]);
 }
-// on retient à l'arrivée si la visite vient d'une galerie du site (les flèches
-// remplacent la page, donc le referrer devient ensuite photo.html elle-même)
-const ref = document.referrer ? new URL(document.referrer) : null;
-const fromSite = !!ref && ref.origin === location.origin;
-const fromPhoto = fromSite && ref.pathname.endsWith("/photo.html");
-let cameFromSite = fromSite;
-try {
-  if (!fromPhoto) sessionStorage.setItem("photoFromGallery", fromSite ? "1" : "0");
-  cameFromSite = sessionStorage.getItem("photoFromGallery") === "1";
-} catch (e) {}
+
+function go(step) {
+  if (!list.length) return;
+  index = (index + step + list.length) % list.length;
+  // replaceState : les flèches ne remplissent pas l'historique, Retour ramène à la galerie
+  history.replaceState(null, "", photoHref(list[index], key));
+  show();
+}
+
+// retour : page précédente si on vient du site, sinon la page de la série
+const fromSite = document.referrer && new URL(document.referrer).origin === location.origin;
 const goBack = () => {
-  if (cameFromSite && history.length > 1) history.back();
+  if (fromSite && history.length > 1) history.back();
   else location.href = back.href;
 };
-back.addEventListener("click", (e) => {
-  e.preventDefault();
-  goBack();
-});
+back.addEventListener("click", (e) => { e.preventDefault(); goBack(); });
 
-function goTo(step) {
-  if (!currentCategory) return;
-  const list = photos[currentCategory];
-  const index = (currentIndex + step + list.length) % list.length;
-  // replace : les flèches ne remplissent pas l'historique, RETOUR ramène à la galerie
-  location.replace(photoUrl(list[index]));
-}
-
-document.getElementById("next").onclick = () => goTo(1);
-document.getElementById("prev").onclick = () => goTo(-1);
-
-// clavier : ← → pour naviguer, Échap pour revenir
+document.getElementById("next").onclick = () => go(1);
+document.getElementById("prev").onclick = () => go(-1);
 document.addEventListener("keydown", (e) => {
-  if (e.key === "ArrowRight") goTo(1);
-  else if (e.key === "ArrowLeft") goTo(-1);
+  if (e.key === "ArrowRight") go(1);
+  else if (e.key === "ArrowLeft") go(-1);
   else if (e.key === "Escape") goBack();
 });
 
@@ -194,16 +103,14 @@ document.addEventListener("touchend", (e) => {
   if (touchX === null) return;
   const dx = e.changedTouches[0].clientX - touchX;
   touchX = null;
-  if (Math.abs(dx) > 50) goTo(dx < 0 ? 1 : -1);
+  if (Math.abs(dx) > 50) go(dx < 0 ? 1 : -1);
 });
 
-// précharge la photo suivante pour une navigation instantanée
-if (currentCategory) {
-  const list = photos[currentCategory];
-  new Image().src = `${CLOUD}/${resolveId(list[(currentIndex + 1) % list.length])}`;
+if (index !== -1) show();
+else {
+  document.getElementById("cap").innerHTML = tr("Photo not found.", "Photo introuvable.");
+  applyLang();
 }
-
 </script>
-
 </body>
 </html>

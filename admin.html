@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="fr" data-theme="sable">
+<head>
+<meta charset="UTF-8">
+<title>Admin — Obsidian Photography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Michroma&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&text=%E7%8B%90&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>try { document.documentElement.dataset.theme = localStorage.getItem("v2-theme") || "sable"; } catch (e) {}</script>
+
+<style>
+/* Page d'administration : choisir les photos de couverture. Ne s'enregistre que
+   quand le site tourne sur cet ordinateur avec tools/admin-server.py. */
+.admin { display: grid; grid-template-columns: 250px 1fr; gap: clamp(24px, 4vw, 60px); padding-top: 28px; padding-bottom: 80px; align-items: start; }
+.admin-top { display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-top: 22px; padding-bottom: 14px; border-bottom: 1px solid var(--line); color: var(--muted); }
+.admin-top .right { display: flex; align-items: center; gap: 24px; }
+.admin-top a:hover { color: var(--fg); }
+#status { transition: color .3s; }
+#status.ok { color: var(--fg); }
+#status.err { color: var(--seal); }
+
+.targets { position: sticky; top: 20px; max-height: calc(100vh - 40px); overflow-y: auto; }
+.targets h2 { color: var(--muted); font-weight: 400; margin: 22px 0 8px; }
+.targets h2:first-child { margin-top: 0; }
+.targets button { display: flex; justify-content: space-between; align-items: baseline; gap: 10px; width: 100%; padding: 7px 10px; border-radius: 8px; text-align: left; font-size: 20px; }
+.targets button:hover { background: var(--line); }
+.targets button[aria-current="true"] { background: var(--fg); color: var(--bg); }
+.targets .n { font-size: 11px; opacity: .6; font-family: -apple-system, "Helvetica Neue", Arial, sans-serif; }
+
+.pane h1 { font-weight: 300; font-size: clamp(32px, 4vw, 54px); line-height: 1.1; }
+.pane .hint { color: var(--muted); margin: 6px 0 22px; max-width: 40em; }
+.pane h3 { font-weight: 400; color: var(--muted); margin: 34px 0 12px; }
+
+.chosen { display: flex; flex-wrap: wrap; gap: 10px; min-height: 96px; padding: 12px; border: 1px dashed var(--line); border-radius: var(--radius); margin-bottom: 12px; align-items: center; }
+.chosen .empty { color: var(--muted); font-style: italic; padding: 0 8px; }
+.chosen button { position: relative; width: 104px; height: 72px; border-radius: 8px; overflow: hidden; }
+.chosen img, .tile img { width: 100%; height: 100%; object-fit: cover; }
+.chosen button::after { content: "×"; position: absolute; inset: 0; display: grid; place-items: center; background: rgba(0,0,0,.55); color: #fff; font-size: 26px; opacity: 0; transition: opacity .15s; }
+.chosen button:hover::after { opacity: 1; }
+.badge { position: absolute; top: 6px; left: 6px; z-index: 1; min-width: 22px; padding: 3px 6px; border-radius: 999px; background: var(--fg); color: var(--bg); font: 600 11px/1.3 -apple-system, "Helvetica Neue", Arial, sans-serif; text-align: center; }
+.actions { display: flex; gap: 18px; color: var(--muted); }
+.actions button:hover { color: var(--fg); }
+
+.tiles { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 10px; }
+.tile { position: relative; aspect-ratio: 3 / 2; border-radius: 10px; overflow: hidden; background: var(--line); transition: transform .15s; }
+.tile:hover { transform: scale(1.02); }
+.tile .badge { display: none; }
+.tile.on { outline: 3px solid var(--fg); outline-offset: -3px; }
+.tile.on .badge { display: block; }
+.tile.on img { opacity: .75; }
+.tile .size { position: absolute; left: 0; right: 0; bottom: 0; padding: 12px 7px 5px; background: linear-gradient(transparent, rgba(0,0,0,.7)); color: #fff; font: 10px/1.2 -apple-system, "Helvetica Neue", Arial, sans-serif; letter-spacing: .04em; text-align: left; }
+.tile .size.warn { color: #ffb199; font-weight: 600; }
+.tile { cursor: pointer; }
+.tile .hide { position: absolute; top: 6px; right: 6px; width: 24px; height: 24px; border-radius: 50%; background: rgba(0,0,0,.55); color: #fff; font: 15px/24px -apple-system, "Helvetica Neue", Arial, sans-serif; opacity: .55; transition: opacity .15s, background .15s; }
+.tile:hover .hide { opacity: 1; }
+.tile .hide:hover { background: var(--seal); }
+.tile.off { cursor: default; }
+.tile.off img { opacity: .22; filter: grayscale(1); }
+.tile.off .hide { opacity: 1; }
+.hidden-count { color: var(--seal); min-height: 1.5em; margin-top: 18px; }
+#status { padding: 6px 12px; border-radius: 999px; border: 1px solid var(--line); }
+
+@media (max-width: 760px) {
+  .admin { grid-template-columns: 1fr; }
+  .targets { position: static; max-height: none; display: flex; flex-wrap: wrap; gap: 4px; }
+  .targets h2 { width: 100%; margin: 12px 0 2px; }
+  .targets button { width: auto; font-size: 17px; }
+}
+</style>
+</head>
+<body data-nav="none">
+
+<header class="admin-top wrap label">
+  <a href="index.html">← Voir le site</a>
+  <span class="right">
+    <span id="status">Chargement…</span>
+    <span data-theme-dots></span>
+  </span>
+</header>
+
+<div class="admin wrap">
+  <nav class="targets" id="targets" aria-label="Que choisir"></nav>
+  <main class="pane" id="pane"></main>
+</div>
+
+<script src="js/photos.js"></script>
+<script src="js/covers.js"></script>
+<script src="js/sizes.js"></script>
+<script>window.KEEP_HIDDEN_PHOTOS = true;   // ici on garde tout, pour pouvoir remettre une photo masquée</script>
+<script src="js/site.js"></script>
+<script>
+// ─── ÉTAT : copie de covers.js, modifiée au clic puis renvoyée au serveur local ──
+const state = {
+  home: [...(covers().home || [])],
+  selection: [...(covers().selection || [])],
+  series: Object.fromEntries(Object.entries(covers().series || {}).map(([k, ids]) => [k, [...ids]])),
+  hidden: Object.fromEntries(Object.entries(covers().hidden || {}).map(([k, ids]) => [k, [...ids]])),
+};
+const hiddenIn = (key) => state.hidden[key] || [];
+
+// toutes les photos du site, regroupées par série (pour l'accueil, on choisit parmi tout)
+// (sans les photos masquées de chaque série)
+const groupsAll = () => ALL_SERIES.map((s) => ({
+  title: `${s.name} ${s.jp}`,
+  entries: unique(photos[s.key] || []).filter((e) => !hiddenIn(s.key).includes(resolveId(e))),
+}));
+
+const TARGETS = [
+  { id: "home", group: "Accueil", label: "Diaporama",
+    fullscreen: true,
+    hint: "Les grandes photos plein écran de l'accueil, affichées dans un ordre aléatoire à chaque visite. Choisis de préférence des paysages en haute résolution : les photos marquées « trop petite » seront floues en plein écran, et les portraits seront très rognés.",
+    get: () => state.home, set: (ids) => { state.home = ids; }, groups: groupsAll },
+  { id: "selection", group: "Accueil", label: "Sélection",
+    hint: "Tes photos préférées pour la section « Selection » de l'accueil. À chaque visite, le site en affiche 25 tirées au hasard parmi celles choisies ici.",
+    get: () => state.selection, set: (ids) => { state.selection = ids; }, groups: groupsAll },
+  ...ALL_SERIES.map((s) => ({
+    id: s.key, series: s.key, group: SERIES.includes(s) ? "Couvertures des séries" : "Couvertures des couleurs", label: `${s.name} ${s.jp}`,
+    hint: "Les photos de couverture de cette série. Si tu en choisis plusieurs, le site en affiche une au hasard à chaque visite. La croix dans le coin d'une photo la masque du site (doublon, photo en trop) ; elle reste ici, grisée, et la flèche la remet.",
+    get: () => state.series[s.key] || [],
+    set: (ids) => { if (ids.length) state.series[s.key] = ids; else delete state.series[s.key]; },
+    groups: () => [{ title: "", entries: unique(photos[s.key] || []) }],
+  })),
+];
+
+const targetsEl = document.getElementById("targets");
+const pane = document.getElementById("pane");
+const statusEl = document.getElementById("status");
+let current = TARGETS.find((t) => t.id === decodeURIComponent(location.hash.slice(1))) || TARGETS[0];
+
+// ─── ENREGISTREMENT ─────────────────────────────────────────────────────────
+const setStatus = (text, cls = "") => { statusEl.textContent = text; statusEl.className = cls; };
+let saveTimer = 0;
+function save() {
+  setStatus("Enregistrement…");
+  clearTimeout(saveTimer);
+  saveTimer = setTimeout(async () => {
+    try {
+      const res = await fetch("api/covers", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(state),
+      });
+      if (!res.ok) throw new Error(res.status);
+      setStatus("Enregistré ✓", "ok");
+    } catch (e) {
+      setStatus("Non enregistré — le serveur local n'est pas lancé", "err");
+    }
+  }, 250);
+}
+
+// ─── MENU DE GAUCHE ─────────────────────────────────────────────────────────
+function renderTargets() {
+  let group = "";
+  targetsEl.innerHTML = TARGETS.map((t) => {
+    const head = t.group !== group ? `<h2 class="label">${group = t.group}</h2>` : "";
+    return `${head}<button data-target="${t.id}" aria-current="${t === current}">
+      <span>${t.label}</span><span class="n">${t.get().length || ""}</span></button>`;
+  }).join("");
+}
+targetsEl.addEventListener("click", (e) => {
+  const button = e.target.closest("[data-target]");
+  if (!button) return;
+  current = TARGETS.find((t) => t.id === button.dataset.target);
+  history.replaceState(null, "", `#${current.id}`);
+  renderTargets();
+  renderPane();
+  window.scrollTo(0, 0);
+});
+
+// ─── PANNEAU : photos choisies en haut, toutes les photos en dessous ────────
+const thumb = (entry) => `<img alt="" loading="lazy" src="${url(500, entry)}">`;
+
+// taille d'origine (js/sizes.js) : étiquette sous chaque vignette, avec un avertissement
+// pour le plein écran quand la photo est trop petite ou en portrait
+const FULLSCREEN_MIN = 3000;   // largeur minimale pour rester nette en plein écran sur écran Retina
+function sizeTag(entry) {
+  const size = (typeof SIZES !== "undefined" ? SIZES : {})[resolveId(entry)];
+  if (!size) return `<span class="size">taille inconnue</span>`;
+  const [w, h] = size;
+  let warn = "";
+  if (current.fullscreen) {
+    if (w < FULLSCREEN_MIN && w >= h) warn = "trop petite";
+    else if (w < h) warn = w < FULLSCREEN_MIN ? "portrait, trop petite" : "portrait";
+  }
+  return `<span class="size${warn ? " warn" : ""}">${w} × ${h}${warn ? ` · ${warn}` : ""}</span>`;
+}
+
+function renderPane() {
+  pane.innerHTML = `
+    <h1>${current.group === "Accueil" ? "Accueil — " : ""}${current.label}</h1>
+    <p class="hint">Clique sur une photo pour la choisir, reclique pour l'enlever. ${current.hint} Tout s'enregistre tout seul à chaque clic.</p>
+    <div class="chosen" id="chosen"></div>
+    <div class="actions label"><button id="clear">Tout enlever</button></div>
+    <p class="hidden-count label" id="hidden-count"></p>
+    ${current.groups().map((g) => `
+      ${g.title ? `<h3 class="label">${g.title}</h3>` : `<h3 class="label">Toutes les photos de la série</h3>`}
+      <div class="tiles">${g.entries.map((entry) =>
+        `<div class="tile" role="button" tabindex="0" data-id="${resolveId(entry)}"><span class="badge"></span>${thumb(entry)}${sizeTag(entry)}${
+          current.series ? `<button class="hide" data-hide="${resolveId(entry)}"></button>` : ""}</div>`).join("")}</div>`).join("")}`;
+  refresh();
+}
+
+// met à jour les photos choisies, les contours et les compteurs, sans recharger les vignettes
+function refresh() {
+  const ids = current.get();
+  document.getElementById("chosen").innerHTML = ids.length
+    ? ids.map((id, i) => `<button data-id="${id}" title="Enlever"><span class="badge">${i + 1}</span>${thumb(id)}</button>`).join("")
+    : `<span class="empty">Aucune photo choisie : le site tire au hasard.</span>`;
+  pane.querySelectorAll(".tile").forEach((tile) => {
+    const position = ids.indexOf(tile.dataset.id);
+    tile.classList.toggle("on", position !== -1);
+    tile.firstElementChild.textContent = position + 1;
+    const off = !!current.series && hiddenIn(current.series).includes(tile.dataset.id);
+    tile.classList.toggle("off", off);
+    const hide = tile.querySelector(".hide");
+    if (hide) {
+      hide.textContent = off ? "↺" : "×";
+      hide.title = off ? "Remettre sur le site" : "Masquer du site";
+    }
+  });
+  const hiddenCount = current.series ? hiddenIn(current.series).length : 0;
+  document.getElementById("hidden-count").textContent =
+    hiddenCount ? `${hiddenCount} photo${hiddenCount > 1 ? "s" : ""} masquée${hiddenCount > 1 ? "s" : ""} du site` : "";
+  renderTargets();
+}
+
+pane.addEventListener("click", (e) => {
+  if (e.target.closest("#clear")) {
+    if (!current.get().length) return;
+    current.set([]);
+  } else if (e.target.closest("[data-hide]")) {
+    // masquer / remettre une photo dans cette série
+    const id = e.target.closest("[data-hide]").dataset.hide;
+    const key = current.series;
+    const hidden = hiddenIn(key);
+    if (hidden.includes(id)) {
+      const rest = hidden.filter((x) => x !== id);
+      if (rest.length) state.hidden[key] = rest; else delete state.hidden[key];
+    } else {
+      state.hidden[key] = [...hidden, id];
+      current.set(current.get().filter((x) => x !== id));   // une photo masquée ne peut pas rester en couverture
+    }
+  } else {
+    const button = e.target.closest("[data-id]");
+    if (!button) return;
+    if (button.classList.contains("off")) return;
+    const id = button.dataset.id;
+    const ids = current.get();
+    current.set(ids.includes(id) ? ids.filter((x) => x !== id) : [...ids, id]);
+  }
+  refresh();
+  save();
+});
+
+window.addEventListener("hashchange", () => {
+  const target = TARGETS.find((t) => t.id === decodeURIComponent(location.hash.slice(1)));
+  if (!target || target === current) return;
+  current = target;
+  renderTargets();
+  renderPane();
+});
+
+renderTargets();
+renderPane();
+setStatus("Enregistrement automatique");
+</script>
+</body>
+</html>

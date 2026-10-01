@@ -1,154 +1,239 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="sable">
 <head>
 <meta charset="UTF-8">
 <title>Obsidian Photography 狐 — Visual Portfolio</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Obsidian Photography — a minimalist visual portfolio by Thomas Eucat exploring Japan, city lights, wildlife and atmosphere.">
 <meta name="author" content="Obsidian Photography">
 <meta name="keywords" content="photography, portfolio, Japan photography, street photography, color photography, minimalist photography">
-
 <meta property="og:title" content="Obsidian Photography 狐">
 <meta property="og:description" content="A curated visual space exploring color, mood and atmosphere.">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ashtar.fr/index.html">
 <meta property="og:image" content="https://res.cloudinary.com/dhbmaw1bm/image/upload/w_1200,q_auto,f_auto/IMGL1050_wtdpdc">
-
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="Obsidian Photography 狐">
 <meta name="twitter:description" content="Minimalist photography portfolio exploring light and color.">
 <meta name="twitter:image" content="https://res.cloudinary.com/dhbmaw1bm/image/upload/w_1200,q_auto,f_auto/IMGL1050_wtdpdc">
-
 <link rel="canonical" href="https://ashtar.fr/index.html">
 <link rel="sitemap" type="application/xml" title="Sitemap" href="sitemap.xml">
 <meta name="google-site-verification" content="xsAkdt4u_QSxpDgHW8pWPlvMmWDcL8KepHoA7o-OUso" />
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
-
 <link rel="icon" type="image/png" href="https://res.cloudinary.com/dhbmaw1bm/image/upload/w_96,h_96,c_fill,q_auto,f_png/IMGL1050_wtdpdc">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/colors.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Michroma&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&text=%E7%8B%90&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>try {
+  document.documentElement.dataset.theme = localStorage.getItem("v2-theme") || "sable";
+  document.documentElement.lang = localStorage.getItem("v2-lang") || "en";
+} catch (e) {}</script>
 </head>
-<body class="theme-blue">
+<body>
 
-<header class="header">
-  <div id="menu"></div>
-</header>
-
-<section class="hero-visual">
-  <img class="hero-slide active" alt="">
-  <img class="hero-slide" alt="">
-  <img class="hero-slide" alt="">
-  <img class="hero-slide" alt="">
-  <img class="hero-slide" alt="">
-  <div class="hero-overlay"></div>
-  <div class="hero-content">
-    <h1>Obsidian Photography 狐</h1>
-    <p class="hero-sub" lang="fr">Japon, lumière et instants silencieux — portfolio visuel de Thomas Eucat.</p>
-  </div>
-  <div class="hero-scroll-cue">↓</div>
-</section>
-
-<!-- DÉSACTIVÉ temporairement — à reprendre avec plus de photos + drag interactif
-<section class="scatter-section">
-  <h2 class="scatter-title">Regard 一瞥</h2>
-  <div class="scatter-grid">
-    <div class="scatter-card"><img alt="" loading="lazy"></div>
-    <div class="scatter-card"><img alt="" loading="lazy"></div>
-    <div class="scatter-card"><img alt="" loading="lazy"></div>
-    <div class="scatter-card"><img alt="" loading="lazy"></div>
-    <div class="scatter-card"><img alt="" loading="lazy"></div>
-    <div class="scatter-card"><img alt="" loading="lazy"></div>
-    <div class="scatter-card"><img alt="" loading="lazy"></div>
-    <div class="scatter-card"><img alt="" loading="lazy"></div>
-    <div class="scatter-card"><img alt="" loading="lazy"></div>
+<section class="hero" id="top">
+  <div class="hero-text">
+    <div>
+      <h1>Obsidian <em>Photography</em></h1>
+      <p id="hero-line" data-fr="Japon, lumière et instants silencieux.">Japan, light and quiet moments.</p>
+    </div>
+    <div class="hero-nav label">
+      <button id="hero-prev" aria-label="Previous photo">←</button>
+      <span class="hero-count" id="hero-count"></span>
+      <button id="hero-next" aria-label="Next photo">→</button>
+    </div>
   </div>
 </section>
--->
 
-<section class="index-grid" aria-label="Parcourir par catégorie">
-  <a class="index-tile" href="nippon.html" data-category="nippon">
-    <div class="tile-photo"><img alt="Nippon 日本" loading="lazy"></div>
-    <span class="tile-label">Nippon 日本</span>
-  </a>
-  <a class="index-tile" href="city.html" data-category="city">
-    <div class="tile-photo"><img alt="City 街" loading="lazy"></div>
-    <span class="tile-label">City 街</span>
-  </a>
-  <a class="index-tile" href="animals.html" data-category="animals">
-    <div class="tile-photo"><img alt="Animals 動物" loading="lazy"></div>
-    <span class="tile-label">Animals 動物</span>
-  </a>
-  <a class="index-tile" href="blackwhite.html" data-category="blackwhite">
-    <div class="tile-photo"><img alt="Black &amp; White 白黒写真" loading="lazy"></div>
-    <span class="tile-label">Black&amp;White 白黒</span>
-  </a>
-  <a class="index-tile" href="bynight.html" data-category="bynight">
-    <div class="tile-photo"><img alt="By Night 夜" loading="lazy"></div>
-    <span class="tile-label">By Night 夜</span>
-  </a>
-  <a class="index-tile" href="people.html" data-category="people">
-    <div class="tile-photo"><img alt="People 人々" loading="lazy"></div>
-    <span class="tile-label">People 人々</span>
-  </a>
-  <a class="index-tile" href="buddha.html" data-category="buddha">
-    <div class="tile-photo"><img alt="Buddha 仏々" loading="lazy"></div>
-    <span class="tile-label">Buddha 仏々</span>
-  </a>
-  <a class="index-tile" href="artwork.html" data-category="drawings">
-    <div class="tile-photo"><img alt="Artwork 図" loading="lazy"></div>
-    <span class="tile-label">Artwork 図</span>
-  </a>
-</section>
+<main class="wrap">
 
-<h2 class="section-title">Selection 抜粋</h2>
-<div class="galerie" id="galerie-random"></div>
+  <section class="block reveal">
+    <div class="block-head label"><span>Portfolio</span><span>Thomas Eucat</span></div>
+    <div class="intro-row">
+      <p class="lead" data-fr="Un portfolio photographique, entre Kyoto et Tokyo. Temples, <em>couleurs</em> et secrets.">A photographic portfolio, between Kyoto and Tokyo. Temples, <em>colors</em> and secrets.</p>
+      <span class="seal large" role="img" aria-label="狐 — kitsune, the fox"><span>狐</span></span>
+    </div>
+  </section>
 
-<div id="footer"></div>
+  <section class="block reveal" id="travaux">
+    <div class="block-head label">
+      <span class="tabs" role="tablist">
+        <button role="tab" data-tab="series" aria-selected="true" data-fr="Travaux">Works</button>
+        <button role="tab" data-tab="colors" aria-selected="false" data-fr="Couleurs 色">Colors 色</button>
+      </span>
+      <span id="cat-count"></span>
+    </div>
+    <div class="cats">
+      <ul class="cat-list" id="cat-list"></ul>
+      <div class="cat-preview" id="cat-preview"></div>
+    </div>
+  </section>
 
-<script src="js/menu.js"></script>
+  <section class="block">
+    <div class="block-head label reveal"><span data-fr="Sélection 抜粋">Selection 抜粋</span><span id="sel-count"></span></div>
+    <div class="selection" id="selection"></div>
+  </section>
+
+  <footer id="footer"></footer>
+
+</main>
+
 <script src="js/photos.js"></script>
-<script src="js/galerie.js"></script>
-<script src="js/footer.js"></script>
+<script src="js/covers.js"></script>
+<script src="js/site.js"></script>
 <script>
-  // la cover charge en priorité ; le reste de la page (tuiles + galerie)
-  // n'appelle ses ~30 images qu'une fois la cover arrivée, pour ne pas
-  // lui faire concurrence sur la bande passante au premier affichage
-  populateHeroSlides(5);
+// ─── PHRASE SUR LA PHOTO D'ACCUEIL — une des phrases, au hasard à chaque visite ──
+const HERO_LINES = [
+  { en: "Japan, light and quiet moments.", fr: "Japon, lumière et instants silencieux." },
+  { en: "Where the light falls silent.",   fr: "Là où la lumière fait silence." },
+];
+const heroLine = document.getElementById("hero-line");
+const line = pick(HERO_LINES, 1)[0];
+heroLine.dataset.en = line.en;
+heroLine.dataset.fr = line.fr;
+heroLine.textContent = lang === "fr" ? line.fr : line.en;
 
-  const heroImg = document.querySelector(".hero-slide.active");
-  const startRestOfPage = () => {
-    populateIndexTiles();
-    generateHomeGalerie(24);
+// ─── HERO — fondu lent, les slides suivantes ne chargent qu'à leur tour ─────
+// en "cover", une photo paysage dans une fenêtre haute est agrandie jusqu'à la
+// hauteur de l'écran : la largeur utile dépasse alors celle de la fenêtre
+const heroWidth = () => {
+  const need = Math.max(innerWidth, innerHeight * 1.5) * Math.min(devicePixelRatio || 1, 2);
+  return WIDTHS.find((w) => w >= need) || WIDTHS[WIDTHS.length - 1];
+};
+const hero = document.getElementById("top");
+const heroCount = document.getElementById("hero-count");
+// photos choisies dans covers.js, dans un ordre mélangé à chaque visite ;
+// à défaut, quatre photos de Nippon au hasard
+const heroEntries = homeCovers().length ? pick(homeCovers(), homeCovers().length) : pick(photos.nippon, 4);
+const heroImgs = heroEntries.map((entry, i) => {
+  const img = document.createElement("img");
+  img.alt = "";
+  if (i === 0) { img.src = url(heroWidth(), entry); img.className = "active"; }
+  else img.dataset.src = url(heroWidth(), entry);
+  hero.insertBefore(img, hero.querySelector(".hero-text"));
+  return img;
+});
+let heroIndex = 0;
+const showCount = () => heroCount.textContent = `${pad(heroIndex + 1)} / ${pad(heroImgs.length)}`;
+showCount();
+
+// passe à la photo voulue ; quick = fondu court (clic sur une flèche, balayage)
+function showHero(target, quick) {
+  target = (target + heroImgs.length) % heroImgs.length;
+  if (target === heroIndex) return;
+  const next = heroImgs[target];
+  const swap = () => {
+    hero.classList.toggle("quick", !!quick);
+    heroImgs.forEach((img) => img.classList.toggle("active", img === next));
+    heroIndex = target;
+    showCount();
   };
-  if (heroImg && !heroImg.complete) {
-    heroImg.addEventListener("load", startRestOfPage, { once: true });
-  } else {
-    startRestOfPage();
-  }
-  // populateScatterCards(); // DÉSACTIVÉ temporairement — à reprendre plus tard
+  if (next.dataset.src) {
+    next.addEventListener("load", swap, { once: true });
+    next.src = next.dataset.src;
+    delete next.dataset.src;
+  } else if (next.complete) swap();
+}
 
-  (function(){
-    let current = 0;
-    setInterval(() => {
-      current = advanceHeroSlide(current);
-    }, 5000);
-  })();
+// défilement automatique, relancé après chaque action du visiteur
+let heroTimer = 0;
+const startHeroTimer = () => {
+  clearInterval(heroTimer);
+  heroTimer = setInterval(() => showHero(heroIndex + 1), 6500);
+};
+const stepHero = (step) => { showHero(heroIndex + step, true); startHeroTimer(); };
+startHeroTimer();
+document.getElementById("hero-prev").addEventListener("click", () => stepHero(-1));
+document.getElementById("hero-next").addEventListener("click", () => stepHero(1));
 
-  // Section "Regard" désactivée temporairement — à reprendre plus tard
-  // (function(){
-  //   setInterval(() => {
-  //     const cards = document.querySelectorAll('.scatter-card');
-  //     const card = cards[Math.floor(Math.random() * cards.length)];
-  //     shuffleScatterCard(card);
-  //   }, 2800);
-  // })();
+// mobile : glisser gauche / droite sur la photo
+let heroTouchX = null;
+hero.addEventListener("touchstart", (e) => { heroTouchX = e.touches[0].clientX; }, { passive: true });
+hero.addEventListener("touchend", (e) => {
+  if (heroTouchX === null) return;
+  const dx = e.changedTouches[0].clientX - heroTouchX;
+  heroTouchX = null;
+  if (Math.abs(dx) > 50) stepHero(dx < 0 ? 1 : -1);
+});
+
+// ─── SÉRIES / COULEURS — deux onglets, même liste avec aperçu ───────────────
+const catList = document.getElementById("cat-list");
+const catPreview = document.getElementById("cat-preview");
+const catCount = document.getElementById("cat-count");
+const canHover = matchMedia("(hover: hover)").matches;
+const TABS = {
+  series: { items: SERIES, count: (n) => tr(`${n} series`, `${n} séries`) },
+  // couleurs : au survol, toute la page prend la couleur (mêmes teintes que les pages Couleurs)
+  colors: { items: COLORS, count: (n) => tr(`${n} colors`, `${n} couleurs`), tint: true },
+};
+
+function showTab(name) {
+  const tab = TABS[name];
+  document.querySelectorAll("[data-tab]").forEach((b) => b.setAttribute("aria-selected", b.dataset.tab === name));
+  catList.replaceChildren();
+  catPreview.replaceChildren();
+  delete document.body.dataset.tint;
+
+  const items = tab.items.filter((c) => (photos[c.key] || []).length);
+  items.forEach((c, i) => {
+    // couverture : une des photos choisies dans covers.js ; à défaut, une photo de la série au hasard
+    const entry = pick(seriesCovers(c.key).length ? seriesCovers(c.key) : photos[c.key], 1)[0];
+
+    const preview = document.createElement("img");
+    preview.alt = "";
+    preview.loading = "lazy";
+    preview.sizes = "(max-width: 760px) 1px, 40vw";
+    preview.srcset = srcset(entry);
+    preview.src = url(1200, entry);
+    if (i === 0) preview.className = "active";
+    catPreview.append(preview);
+
+    const li = document.createElement("li");
+    li.innerHTML = `<a href="${c.href}" class="${i === 0 ? "current" : ""}">
+        <img class="thumb" alt="" loading="lazy" src="${url(160, entry)}">
+        <span class="num label">${pad(i + 1)}</span>
+        <span class="name">${nameHTML(c)}</span>
+        <span class="jp">${c.jp}</span>
+      </a>`;
+    const link = li.firstElementChild;
+    const activate = () => {
+      catPreview.querySelector(".active")?.classList.remove("active");
+      catList.querySelector(".current")?.classList.remove("current");
+      preview.classList.add("active");
+      link.classList.add("current");
+      if (tab.tint && canHover) document.body.dataset.tint = c.key;
+    };
+    link.addEventListener("mouseenter", activate);
+    link.addEventListener("focus", activate);
+    catList.append(li);
+  });
+  catCount.innerHTML = tab.count(items.length);
+  applyLang(document.getElementById("travaux"));
+}
+// le fond revient au thème quand la souris quitte la liste
+catList.addEventListener("mouseleave", () => { delete document.body.dataset.tint; });
+document.querySelectorAll("[data-tab]").forEach((b) => b.addEventListener("click", () => showTab(b.dataset.tab)));
+showTab("series");
+
+// ─── SÉLECTION — peu de photos, en grand ────────────────────────────────────
+const selection = document.getElementById("selection");
+const pool = SERIES.flatMap((c) => unique(photos[c.key] || []).map((entry) => ({ entry, cat: c })));
+// 25 photos tirées au hasard parmi celles choisies dans covers.js (à défaut : parmi toutes)
+const chosen = pick(selectionCovers().length ? selectionCovers() : pool, 25);
+document.getElementById("sel-count").textContent = `${chosen.length} images`;
+chosen.forEach(({ entry, cat }, i) => {
+  const fig = document.createElement("figure");
+  fig.className = "reveal";
+  fig.innerHTML = `<a href="${photoHref(entry, cat.key)}"><img loading="lazy"
+      sizes="(max-width: 760px) 100vw, 60vw" srcset="${srcset(entry)}" src="${url(1600, entry)}"></a>
+    <figcaption class="label"><span>${pad(i + 1)}</span><a href="${cat.href}">${cat.name} ${cat.jp}</a></figcaption>`;
+  fig.querySelector("img").alt = entryAlt(entry, `${cat.name} ${cat.jp}`);
+  selection.append(fig);
+});
+observeReveals(selection);
 </script>
-
 </body>
 </html>

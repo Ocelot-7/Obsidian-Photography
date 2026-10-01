@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="sable">
 <head>
-  <meta charset="utf-8">
-  <title>City 街 — Obsidian Photography</title>
+<meta charset="UTF-8">
+<title>City 街 — Obsidian Photography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Urban photography exploring architecture, street moments and city atmosphere.">
 <meta property="og:title" content="City — Obsidian Photography">
 <meta property="og:description" content="Urban photography capturing city life and light.">
@@ -10,17 +11,7 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ashtar.fr/city.html">
 <link rel="canonical" href="https://ashtar.fr/city.html">
-
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="index, follow">
-  <link rel="icon" type="image/png" href="https://res.cloudinary.com/dhbmaw1bm/image/upload/w_96,h_96,c_fill,q_auto,f_png/IMGL1050_wtdpdc">
-<link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/colors.css">
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-
+<meta name="robots" content="index, follow">
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
@@ -497,29 +488,36 @@
   ]
 }
 </script>
+<link rel="icon" type="image/png" href="https://res.cloudinary.com/dhbmaw1bm/image/upload/w_96,h_96,c_fill,q_auto,f_png/IMGL1050_wtdpdc">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Michroma&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&text=%E7%8B%90&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>try {
+  document.documentElement.dataset.theme = localStorage.getItem("v2-theme") || "sable";
+  document.documentElement.lang = localStorage.getItem("v2-lang") || "en";
+} catch (e) {}</script>
 </head>
+<body data-series="city">
 
-<body class="theme-city">
+<main class="wrap page">
+  <div class="block-head label"><a href="index.html#travaux">← <span data-fr="Travaux">Works</span></a><span id="series-count"></span></div>
+  <div class="intro-row">
+    <h1 class="series-title">City<span class="jp">街</span></h1>
+    <span class="seal large" role="img" aria-label="狐 — kitsune, the fox"><span>狐</span></span>
+  </div>
 
-<header class="header">
-<div id="menu"></div>
-</header>
+  <div class="grid" id="grid"></div>
+  <nav class="series-next" id="series-next" aria-label="Next series"></nav>
 
-<h1>City - 街</h1>
+  <footer id="footer"></footer>
+</main>
 
-<div class="galerie" id="galerie-random"></div>
-
-<div id="footer"></div>
-
-
-<script src="js/menu.js"></script>
 <script src="js/photos.js"></script>
-<script src="js/galerie.js"></script>
-<script src="js/footer.js"></script>
-
-<script>
-generateCategoryGalerie("city", 14);
-</script>
-
+<script src="js/covers.js"></script>
+<script src="js/site.js"></script>
+<script src="js/series.js"></script>
 </body>
 </html>

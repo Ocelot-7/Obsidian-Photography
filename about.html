@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="sable">
 <head>
 <meta charset="UTF-8">
 <title>About — Obsidian Photography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="About Obsidian Photography — a minimalist visual portfolio by Thomas Eucat exploring Japan, color and atmosphere.">
 <meta property="og:title" content="About — Obsidian Photography">
 <meta property="og:description" content="A minimalist visual portfolio by Thomas Eucat exploring Japan, color and atmosphere.">
@@ -10,64 +11,48 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ashtar.fr/about.html">
 <link rel="canonical" href="https://ashtar.fr/about.html">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
-
 <link rel="icon" type="image/png" href="https://res.cloudinary.com/dhbmaw1bm/image/upload/w_96,h_96,c_fill,q_auto,f_png/IMGL1050_wtdpdc">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/colors.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Michroma&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&text=%E7%8B%90&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>try {
+  document.documentElement.dataset.theme = localStorage.getItem("v2-theme") || "sable";
+  document.documentElement.lang = localStorage.getItem("v2-lang") || "en";
+} catch (e) {}</script>
 </head>
+<body>
 
-<body class="minimal-page theme-blue">
+<main class="wrap page">
+  <div class="block-head label"><span data-fr="À propos">About</span><span>Thomas Eucat</span></div>
 
-<header class="header">
-  <div id="menu"></div>
-</header>
+  <div class="about">
+    <div class="text reveal">
+      <h1 class="lead" data-fr="Obsidian Photography est un espace visuel dédié à la <em>couleur</em>, à l'ambiance et à l'atmosphère.">Obsidian Photography is a visual space dedicated to <em>color</em>, mood and atmosphere.</h1>
+      <p data-fr="Ce portfolio explore le Japon, les lumières de la ville, les animaux et les instants en noir et blanc.">This portfolio explores Japan, city lights, animals and monochrome moments.</p>
 
-<main class="minimal-container">
+      <ul class="links">
+        <li><a href="mailto:Thomas.eucat@protonmail.com"><span>Thomas.eucat@protonmail.com</span><span class="label">E-mail</span></a></li>
+        <li><a href="https://www.instagram.com/obsidian_photography_" target="_blank" rel="noopener"><span>@obsidian_photography_</span><span class="label">Instagram</span></a></li>
+      </ul>
+    </div>
 
-<h1>About</h1>
+    <img class="reveal" alt="Portrait of Thomas Eucat" loading="lazy" id="portrait">
+  </div>
 
-<p>
-Obsidian Photography is a visual space dedicated to color, mood and atmosphere.
-</p>
-
-<p>
-This portfolio explores Japan, city lights, animals and monochrome moments.
-</p>
-
-<p class="contact-email">
-<a href="mailto:Thomas.eucat@protonmail.com">Thomas.eucat@protonmail.com</a>
-</p>
-
-<div class="contact-links">
-<a href="https://www.instagram.com/obsidian_photography_" target="_blank">
-Instagram
-</a>
-</div>
-
-<section class="about-section">
-
-<img 
-src="https://res.cloudinary.com/dhbmaw1bm/image/upload/w_800,q_auto,f_auto/IMGL1262-2_vperob"
-alt="Portrait of Thomas Eucat"
-loading="lazy"
-class="about-photo">
-
-</section>
-
+  <footer id="footer"></footer>
 </main>
-<div id="footer"></div>
 
-<script src="js/menu.js"></script>
-<script src="js/footer.js"></script>
-
+<script src="js/photos.js"></script>
+<script src="js/site.js"></script>
+<script>
+const portrait = document.getElementById("portrait");
+portrait.sizes = "(max-width: 760px) 100vw, 40vw";
+portrait.srcset = srcset(photos.me[0]);
+portrait.src = url(1200, photos.me[0]);
+</script>
 </body>
-
-
 </html>

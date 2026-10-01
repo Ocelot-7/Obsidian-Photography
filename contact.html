@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="en" data-theme="sable">
 <head>
 <meta charset="UTF-8">
 <title>Contact — Obsidian Photography</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Get in touch with Obsidian Photography for inquiries, collaborations and prints.">
 <meta property="og:title" content="Contact — Obsidian Photography">
 <meta property="og:description" content="Get in touch with Obsidian Photography for inquiries, collaborations and prints.">
@@ -12,50 +11,40 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://ashtar.fr/contact.html">
 <link rel="canonical" href="https://ashtar.fr/contact.html">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
-
 <link rel="icon" type="image/png" href="https://res.cloudinary.com/dhbmaw1bm/image/upload/w_96,h_96,c_fill,q_auto,f_png/IMGL1050_wtdpdc">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/colors.css">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300&family=Michroma&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@500&text=%E7%8B%90&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script>try {
+  document.documentElement.dataset.theme = localStorage.getItem("v2-theme") || "sable";
+  document.documentElement.lang = localStorage.getItem("v2-lang") || "en";
+} catch (e) {}</script>
 </head>
+<body>
 
-<body class="minimal-page theme-blue">
+<main class="wrap page">
+  <div class="block-head label"><span>Contact</span><span>Thomas Eucat</span></div>
 
-<header class="header">
-  <div id="menu"></div>
-</header>
+  <div class="intro-row reveal">
+    <div>
+      <p class="lead" style="margin-bottom:.5em" data-fr="Pour toute demande, collaboration ou question :">For any inquiries, collaborations, or questions:</p>
+      <a class="big-link" href="mailto:Thomas.eucat@protonmail.com">Thomas.eucat@<wbr>protonmail.com</a>
+    </div>
+    <span class="seal large" role="img" aria-label="狐 — kitsune, the fox"><span>狐</span></span>
+  </div>
 
-<main class="minimal-container">
+  <ul class="links reveal">
+    <li><a href="https://www.instagram.com/obsidian_photography_" target="_blank" rel="noopener"><span>@obsidian_photography_</span><span class="label">Instagram</span></a></li>
+  </ul>
 
-<h1>Contact</h1>
-
-<p>
-For any inquiries, collaborations, or questions:
-</p>
-
-<p class="contact-email">
-<a href="mailto:Thomas.eucat@protonmail.com">Thomas.eucat@protonmail.com</a>
-</p>
-
-<div class="contact-links">
-<a href="https://www.instagram.com/obsidian_photography_" target="_blank">
-Instagram
-</a>
-</div>
-
+  <footer id="footer"></footer>
 </main>
 
-<div id="footer"></div>
-
-<script src="js/menu.js"></script>
-<script src="js/footer.js"></script>
-
+<script src="js/photos.js"></script>
+<script src="js/site.js"></script>
 </body>
 </html>
-
