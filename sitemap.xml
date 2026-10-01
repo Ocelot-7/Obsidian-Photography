@@ -4,22 +4,22 @@
 
   <!-- Pages principales -->
   <url>
-    <loc>https://ocelot-7.github.io/Obsidian-Photography/index.html</loc>
+    <loc>https://ashtar.fr/index.html</loc>
   </url>
   <url>
-    <loc>https://ocelot-7.github.io/Obsidian-Photography/about.html</loc>
+    <loc>https://ashtar.fr/about.html</loc>
     <image:image>
       <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/IMGL1262-2_vperob.jpg</image:loc>
       <image:caption>Thomas Eucat, portrait — Obsidian Photography</image:caption>
     </image:image>
   </url>
   <url>
-    <loc>https://ocelot-7.github.io/Obsidian-Photography/contact.html</loc>
+    <loc>https://ashtar.fr/contact.html</loc>
   </url>
 
   <!-- Catégories -->
   <url>
-    <loc>https://ocelot-7.github.io/Obsidian-Photography/nippon.html</loc>
+    <loc>https://ashtar.fr/nippon.html</loc>
     <image:image>
       <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9507-2_v7b1qi</image:loc>
       <image:caption>Temple japonais sous la neige, Kyoto</image:caption>
@@ -202,7 +202,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://ocelot-7.github.io/Obsidian-Photography/city.html</loc>
+    <loc>https://ashtar.fr/city.html</loc>
     <image:image>
       <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/street_art_mural_fish_flowers</image:loc>
       <image:caption>Explore the vibrant street art scene with this striking mural featuring fish and flowers on an urban building facade, capturing the essence of artistic expression in city life.</image:caption>
@@ -577,7 +577,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://ocelot-7.github.io/Obsidian-Photography/animals.html</loc>
+    <loc>https://ashtar.fr/animals.html</loc>
     <image:image>
       <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL9574_yyfs0p</image:loc>
       <image:caption>Wildlife and animals photography in Japan – photo 1 – Obsidian Photography</image:caption>
@@ -748,7 +748,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://ocelot-7.github.io/Obsidian-Photography/blackwhite.html</loc>
+    <loc>https://ashtar.fr/blackwhite.html</loc>
     <image:image>
       <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/man_with_long_hair_shearling_coat_cloudy_day</image:loc>
       <image:caption>Explore the serene beauty of this man's portrait against a dramatic, cloudy sky. Experience the charm of nature and urban landscapes in this stunning travel photograph.</image:caption>
@@ -1019,7 +1019,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://ocelot-7.github.io/Obsidian-Photography/bynight.html</loc>
+    <loc>https://ashtar.fr/bynight.html</loc>
     <image:image>
       <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/diver_city_robot_night</image:loc>
       <image:caption>Explore the futuristic giant robot statue illuminated at night in Diver City Tokyo Plaza. A must-see for fans of anime and sci-fi enthusiasts.</image:caption>
@@ -1218,7 +1218,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://ocelot-7.github.io/Obsidian-Photography/people.html</loc>
+    <loc>https://ashtar.fr/people.html</loc>
     <image:image>
       <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/man_in_leather_jacket_outdoors</image:loc>
       <image:caption>A stylish man poses in his leather jacket by a rustic wooden fence, blending urban fashion with nature. Explore travel photography from various locations.</image:caption>
@@ -1313,7 +1313,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://ocelot-7.github.io/Obsidian-Photography/buddha.html</loc>
+    <loc>https://ashtar.fr/buddha.html</loc>
     <image:image>
       <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/kyoto_temple_dusk</image:loc>
       <image:caption>Explore the serene beauty of Kyoto's ancient temples under a dramatic sunset. This stunning shot captures the intricate architecture against the backdrop of a barren winter tree.</image:caption>
@@ -1404,7 +1404,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://ocelot-7.github.io/Obsidian-Photography/artwork.html</loc>
+    <loc>https://ashtar.fr/artwork.html</loc>
     <image:image>
       <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMG_6974_kbmdgm</image:loc>
       <image:caption>Digital illustration, Japanese inspired art – artwork 1 – Obsidian Photography</image:caption>
@@ -1497,7 +1497,7 @@
 
   <!-- Couleurs -->
   <url>
-    <loc>https://ocelot-7.github.io/Obsidian-Photography/index-orange.html</loc>
+    <loc>https://ashtar.fr/index-orange.html</loc>
     <image:image>
       <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/kiyomizu_dera_roof_2</image:loc>
       <image:caption>Explore the stunning red pagoda of Kiyomizu-dera temple, its vibrant colors contrasting with the serene backdrop of Kyoto's city skyline and clear winter skies.</image:caption>
@@ -1712,7 +1712,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://ocelot-7.github.io/Obsidian-Photography/index-rouge.html</loc>
+    <loc>https://ashtar.fr/index-rouge.html</loc>
     <image:image>
       <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7133-2_mwzhwz</image:loc>
       <image:caption>Red tones photography in Japan – photo 1 – Obsidian Photography</image:caption>
@@ -1803,7 +1803,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://ocelot-7.github.io/Obsidian-Photography/index-bleu.html</loc>
+    <loc>https://ashtar.fr/index-bleu.html</loc>
     <image:image>
       <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/sunburst_cloudscape</image:loc>
       <image:caption>Explore the beauty of a sunburst breaking through dense cloud cover in this stunning landscape photo. Perfect for nature and travel enthusiasts.</image:caption>
@@ -1930,7 +1930,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://ocelot-7.github.io/Obsidian-Photography/index-jaune.html</loc>
+    <loc>https://ashtar.fr/index-jaune.html</loc>
     <image:image>
       <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/IMGL7139_jdirjl</image:loc>
       <image:caption>Yellow tones photography in Japan – photo 1 – Obsidian Photography</image:caption>
@@ -1981,7 +1981,7 @@
     </image:image>
   </url>
   <url>
-    <loc>https://ocelot-7.github.io/Obsidian-Photography/index-vert.html</loc>
+    <loc>https://ashtar.fr/index-vert.html</loc>
     <image:image>
       <image:loc>https://res.cloudinary.com/dhbmaw1bm/image/upload/w_2500,q_auto,f_auto/633A5539</image:loc>
       <image:caption>Explore the serene beauty of Kyoto's Arashiyama Bamboo Grove during autumn, with vibrant foliage and traditional boats on a tranquil river.</image:caption>
