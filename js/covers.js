@@ -186,7 +186,8 @@ const COVERS = {
     "people": [
       "IMGL1976_dpmdj0",
       "IMGL1717_olhddz",
-      "IMGL2031_vstfhy"
+      "IMGL2031_vstfhy",
+      "IMGL1805_ylvhnc"
     ],
     "buddha": [
       "IMGL4558-2_otc0nt",
@@ -248,6 +249,13 @@ const COVERS = {
     "bynight": [
       "neon_lights_street",
       "osaka_neon_sign"
+    ],
+    "blackwhite": [
+      "travelers_temple_smile",
+      "traveler_waterfront_clouds"
+    ],
+    "people": [
+      "IMGL1262-2_vperob"
     ]
   }
 };
