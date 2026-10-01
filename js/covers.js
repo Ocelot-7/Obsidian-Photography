@@ -252,7 +252,9 @@ const COVERS = {
     ],
     "blackwhite": [
       "travelers_temple_smile",
-      "traveler_waterfront_clouds"
+      "traveler_waterfront_clouds",
+      "kyoto_pagoda_monochrome",
+      "street_art_night"
     ],
     "people": [
       "IMGL1262-2_vperob"
