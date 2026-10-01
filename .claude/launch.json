@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "configurations": [
+    {
+      "name": "site",
+      "runtimeExecutable": "python3",
+      "runtimeArgs": ["tools/admin-server.py", "8431"],
+      "port": 8431
+    }
+  ]
+}

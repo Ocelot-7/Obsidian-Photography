@@ -10,12 +10,15 @@ const COVERS = {
   "home": [
     "IMGL6361-2_impjst",
     "633A5834_qxhjbb",
-    "IMGL7079-2_wygdzy",
     "IMGL6401_t0sgu3",
     "IMGL6308_m3wdzf",
-    "633A2655_rjyv6d",
     "v1767280805/IMGL1205_ekhgm3.jpg",
-    "633A2876-2_ijjdyz"
+    "633A2876-2_ijjdyz",
+    "IMGL0323_n4nfkw",
+    "IMGL0058-2_fs8vii",
+    "IMGL7139-2_evavfp",
+    "633A2678_gdmuxc",
+    "633A2332_tieznu"
   ],
   "selection": [
     "v1767280805/IMGL1205_ekhgm3.jpg",
@@ -133,12 +136,12 @@ const COVERS = {
   "series": {
     "nippon": [
       "633A6188_fc5h7j",
-      "IMGL6308_m3wdzf",
       "633A5935-2_r1itex",
       "633A2876-2_ijjdyz",
       "IMGL6401_t0sgu3",
       "IMGL8016_abso7v",
-      "633A5350_mnpc5c"
+      "633A5350_mnpc5c",
+      "IMGL6361_o04q0l"
     ],
     "animals": [
       "IMGL0323_n4nfkw",
@@ -151,8 +154,6 @@ const COVERS = {
       "lighthouse_twilight",
       "japanese_pavilion_red",
       "torii_gate_twilight",
-      "kiyomizu_dera_pagoda_6",
-      "IMGL2942-4_yp62kf",
       "kiyomizu_dera_pagoda_2"
     ],
     "city": [
@@ -230,5 +231,23 @@ const COVERS = {
       "633A2812_g3fo2u"
     ]
   },
-  "hidden": {}
+  "hidden": {
+    "orange": [
+      "kiyomizu_dera_pagoda_11",
+      "IMGL2942-4_yp62kf",
+      "japanese_pagoda_evening",
+      "kiyomizu_dera_pagoda_6",
+      "IMGL3061_qwqvlh",
+      "kiyomizu_dera_pagoda_4"
+    ],
+    "nippon": [
+      "IMGL6361-2_impjst",
+      "IMGL6308_m3wdzf",
+      "IMGL7085-2_vslaft"
+    ],
+    "bynight": [
+      "neon_lights_street",
+      "osaka_neon_sign"
+    ]
+  }
 };
