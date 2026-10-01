@@ -1,4 +1,4 @@
-# Obsidian Photography
+# Ashtar Photography
 
 Nouveau design (ex-v2), mis à la racine à la place de l'ancien site. L'ancien site reste dans l'historique git.
 
@@ -23,7 +23,11 @@ En local : `python3 tools/admin-server.py 8431`, puis `http://localhost:8431/` (
 - [x] Page d'administration `admin.html` : choisir au clic le diaporama, la sélection et les couvertures (enregistre dans `js/covers.js`, en local seulement) ; affiche la taille de chaque photo et signale celles trop petites pour le plein écran
 - [x] Masquer des photos (doublons) depuis `admin.html` : retirées du site v2, sans toucher à `photos.js` ni au site actuel
 
+- [x] Site renommé « Ashtar Photography » (logo, titres, balises de partage, données structurées, sitemap)
+
 ## À décider (Thomas)
+
+- [ ] Renommer le compte Instagram (`@obsidian_photography_`) pour qu'il porte le même nom que le site, puis mettre à jour le lien
 
 - [x] Accueil : sur la photo, une phrase au hasard parmi « Japon, lumière et instants silencieux. » et « Là où la lumière fait silence. » ; en dessous, la description du portfolio
 - [ ] Écrire les textes définitifs d'À propos et de Contact, en anglais et en français (ceux en place viennent de la v1, traduits en français par Claude)

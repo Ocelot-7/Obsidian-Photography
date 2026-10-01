@@ -148,7 +148,7 @@ if (document.body.dataset.nav !== "none") {
   const li = (s) => `<li><a href="${s.href}">${nameHTML(s)}<span class="jp">${s.jp}</span></a></li>`;
   document.body.insertAdjacentHTML("afterbegin", `
 <header class="nav" id="nav">
-  <a class="logo" href="index.html"><span>OBSIDIAN</span>${SEAL}</a>
+  <a class="logo" href="index.html"><span>ASHTAR</span>${SEAL}</a>
   <nav class="nav-links label">
     <button id="panel-toggle" aria-expanded="false" aria-controls="panel"><span class="when-closed" data-fr="Travaux">Works</span><span class="when-open" data-fr="Fermer">Close</span></button>
     <a class="hide-m" href="about.html" data-fr="À propos">About</a>
@@ -197,7 +197,7 @@ const foot = document.getElementById("footer");
 if (foot) {
   foot.className = "foot label";
   foot.innerHTML = `
-  <span class="mark">${SEAL}© 2026 Obsidian Photography</span>
+  <span class="mark">${SEAL}© 2026 Ashtar Photography</span>
   ${THEME_DOTS}
   <nav>
     <a href="about.html" data-fr="À propos">About</a>

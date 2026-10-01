@@ -2,9 +2,9 @@
 <html lang="en" data-theme="sable">
 <head>
 <meta charset="UTF-8">
-<title>Photo — Obsidian Photography</title>
+<title>Photo — Ashtar Photography</title>
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="A single photograph from the Obsidian Photography portfolio.">
+<meta name="description" content="A single photograph from the Ashtar Photography portfolio.">
 <meta name="robots" content="noindex, follow">
 <link rel="icon" type="image/png" href="https://res.cloudinary.com/dhbmaw1bm/image/upload/w_96,h_96,c_fill,q_auto,f_png/IMGL1050_wtdpdc">
 
@@ -60,11 +60,11 @@ function show() {
   photoEl.sizes = "92vw";
   photoEl.srcset = srcset(entry);
   photoEl.src = url(2000, entry);
-  const name = series ? `${series.name} ${series.jp}` : "Obsidian Photography";
+  const name = series ? `${series.name} ${series.jp}` : "Ashtar Photography";
   photoEl.alt = entryAlt(entry, `${name} — photo ${index + 1}`);
   document.getElementById("cap").textContent = entryAlt(entry, "");
   document.getElementById("count").textContent = `${pad(index + 1)} / ${pad(list.length)}`;
-  document.title = `${name} — ${pad(index + 1)} — Obsidian Photography`;
+  document.title = `${name} — ${pad(index + 1)} — Ashtar Photography`;
 
   // précharge la suivante pour une navigation instantanée
   const pre = new Image();
